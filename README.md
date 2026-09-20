@@ -20,11 +20,14 @@ persistence and the ranking of buffering versus connectivity, within the
 specified conditional-iid regional-hazard model. Scientific discussion now
 uses thread 49. Novelty and ecological applicability remain questions to test.
 
-The three-patch certificate under `ideation/b_screen/` covers the full
-admissible hazard-law class at 16 fixed ecological parameter combinations.
-The four-patch exact counterexample disproves coordinate-wise monotonicity of
-the intervention difference; it does not establish full-class bounds.
-Larger-system bounds are under methodological review.
+The three- and four-patch certificates under `ideation/b_screen/` cover the
+full admissible hazard-law class at 16 fixed ecological parameter combinations
+for each system size. For four patches, connectivity wins throughout the
+class in 12 cases, buffering in three, and the ranking reverses in one.
+The four-patch audit also gives two laws with identical complete triple-shock
+distributions and opposite intervention rankings (`n4_audit.md`). These are
+conditional model results, not claims about field systems. Bounds for five
+or more patches remain unresolved.
 
 ## Layout
 
