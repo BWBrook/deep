@@ -1,0 +1,12 @@
+# Downloaded external resources live here untracked; every file is recorded in resources/LEDGER.md
+resources/*
+!resources/LEDGER.md
+# Python
+__pycache__/
+*.pyc
+.venv/
+# R
+.Rproj.user/
+.Rhistory
+# macOS
+.DS_Store
