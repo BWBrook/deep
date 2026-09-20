@@ -127,7 +127,9 @@ def persist(K, start, absorb, T=T):
     v = np.zeros(K.shape[0]); v[start] = 1.0
     for _ in range(T):
         v = v @ K
-    return 1.0 - v[absorb]
+    # Sum transient mass directly.  Subtracting the absorbing mass from one
+    # loses the signal when persistence is close to machine precision.
+    return v[:absorb].sum() + v[absorb + 1:].sum()
 
 def d_of(theta, e0, e1):
     return e0 + (e1 - e0) * theta

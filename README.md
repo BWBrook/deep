@@ -42,6 +42,11 @@ for the two fixed endpoint laws need not shrink monotonically with background
 mortality (`n4_background_mortality.md`). Raising background mortality at fixed
 shock mortality also weakens buffering's absolute benefit; this path does
 not isolate one biological mechanism.
+Exact horizon checks show that similar reversal-grid counts can conceal
+changes in both ranking and decision-loss magnitude at fixed parameters
+(`n4_horizon_audit.md`). In this closed model with positive background
+mortality, persistence and absolute action differences tend to zero at long
+horizons; stable signs do not establish stable benefits.
 
 ## Layout
 
