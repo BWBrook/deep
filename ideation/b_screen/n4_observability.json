@@ -1,0 +1,74 @@
+{
+  "question": "Discriminate two known laws with equal prior odds and zero-one loss",
+  "assumptions": [
+    "iid years",
+    "perfect observation of all four patch hits",
+    "candidate laws known",
+    "no nuisance-parameter estimation"
+  ],
+  "method": "multinomial likelihood enumeration in floating point; no Monte Carlo",
+  "lower_K_probabilities_exact": [
+    "7131/10000",
+    "559/2500",
+    "153/5000",
+    "39/2500",
+    "171/10000"
+  ],
+  "upper_K_probabilities_exact": [
+    "50109/70000",
+    "3721/17500",
+    "1647/35000",
+    "81/17500",
+    "1389/70000"
+  ],
+  "one_year_total_variation_exact": "96/4375",
+  "source_sha256": "d9163d4ddb86c797870cf73c19b2d57552371a7579746680721d932a02f0d4e8",
+  "numpy_version": "2.5.3",
+  "results": [
+    {
+      "years": 1,
+      "full_hit_count_error": 0.4890285714285714,
+      "all_four_only_error": 0.4986285714285714,
+      "enumerated_probability_masses": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "years": 25,
+      "full_hit_count_error": 0.36841221008593406,
+      "all_four_only_error": 0.47807892203914437,
+      "enumerated_probability_masses": [
+        0.9999999999999909,
+        0.9999999999999912
+      ]
+    },
+    {
+      "years": 50,
+      "full_hit_count_error": 0.3092409384561893,
+      "all_four_only_error": 0.47247547339078083,
+      "enumerated_probability_masses": [
+        1.0000000000000155,
+        1.0000000000000175
+      ]
+    },
+    {
+      "years": 100,
+      "full_hit_count_error": 0.23666834555891905,
+      "all_four_only_error": 0.45966633968385257,
+      "enumerated_probability_masses": [
+        0.9999999999999764,
+        0.9999999999999777
+      ]
+    },
+    {
+      "years": 200,
+      "full_hit_count_error": 0.15385536723302334,
+      "all_four_only_error": 0.4422599830250713,
+      "enumerated_probability_masses": [
+        1.000000000000054,
+        1.000000000000055
+      ]
+    }
+  ]
+}

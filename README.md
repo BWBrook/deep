@@ -27,7 +27,11 @@ class in 12 cases, buffering in three, and the ranking reverses in one.
 The four-patch audit also gives two laws with identical complete triple-shock
 distributions and opposite intervention rankings (`n4_audit.md`). These are
 conditional model results, not claims about field systems. Bounds for five
-or more patches remain unresolved.
+or more patches remain unresolved. A five-patch existence witness fixes all
+complete four-patch shock distributions and still reverses the ranking
+(`n5_equal_quadruples.md`). A separate finite-record benchmark compares
+information in complete hit counts with all-hit event counts
+(`n4_observability.md`); it does not establish field-data requirements.
 
 ## Layout
 
