@@ -32,6 +32,10 @@ complete four-patch shock distributions and still reverses the ranking
 (`n5_equal_quadruples.md`). A separate finite-record benchmark compares
 information in complete hit counts with all-hit event counts
 (`n4_observability.md`); it does not establish field-data requirements.
+An exact interval check also establishes a positive-area four-patch reversal
+rectangle in the specified mortality/connectivity coordinates
+(`n4_rectangle_audit.md`). The larger saved area report remains an aggregate
+without leaf-level certificates.
 
 ## Layout
 
