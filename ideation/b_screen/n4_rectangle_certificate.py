@@ -84,7 +84,7 @@ def certify(rect0, q, e0, maxdepth=12):
         rect, depth = stack.pop(); evals += 1
         glo = delta_interval(rect, e0, tl, wl); ghi = delta_interval(rect, e0, tu, wu)
         if glo[1] < 0 and ghi[0] > 0:
-            certified.append(rect); continue
+            certified.append((rect, glo, ghi)); continue
         if glo[0] > 0 or ghi[1] < 0:   # certified NON-reversal somewhere? only if whole interval has wrong sign
             unresolved.append((rect, "wrong-sign-whole-rect", glo, ghi)); continue
         if depth >= maxdepth:
@@ -95,9 +95,10 @@ def certify(rect0, q, e0, maxdepth=12):
         else:
             cm = (c0 + c1)/2; stack += [((a0, a1, c0, cm), depth+1), ((a0, a1, cm, c1), depth+1)]
     area0 = (rect0[1]-rect0[0])*(rect0[3]-rect0[2])
-    area_c = sum((r[1]-r[0])*(r[3]-r[2]) for r in certified)
+    area_c = sum((r[1]-r[0])*(r[3]-r[2]) for r, _, _ in certified)
     return dict(rect0=[str(v) for v in rect0], q=str(q), e0=str(e0), n=n, T=T, maxdepth=maxdepth, evaluations=evals,
                 certified_leaves=len(certified), unresolved_leaves=len(unresolved), certified_area_fraction=str(F(area_c/area0)),
+                certified_leaf_evidence=[{"rect": [str(v) for v in r], "delta_glo_interval": [str(g) for g in glo], "delta_ghi_interval": [str(g) for g in ghi]} for r, glo, ghi in certified],
                 certified_area_fraction_float=float(area_c/area0), unresolved=[(tuple(str(v) for v in r), why, [float(g) for g in glo], [float(g) for g in ghi]) for r, why, glo, ghi in unresolved[:10]],
                 seconds=round(time.time()-t0, 1))
 
@@ -107,9 +108,6 @@ if __name__ == "__main__":
     rect0 = (F(7,10), F(17,20), F(1,10), F(1,5))   # e1 in [0.70, 0.85], c in [0.10, 0.20]
     if os.environ.get("RECT") == "small":
         rect0 = (F(3,4), F(17,20), F(3,25), F(9,50))   # e1 in [0.75, 0.85], c in [0.12, 0.18]
-    # quick sanity at the rectangle centre with exact propagation (point evaluation)
-    (tl, wl), (tu, wu) = N3.laws(p, q)
-    import n4_vertical as V
     res = certify(rect0, q, e0, maxdepth=int(sys.argv[1]) if len(sys.argv) > 1 else 10)
     print(json.dumps(res, indent=1))
     out = "n4_rectangle_certificate_small.json" if os.environ.get("RECT") == "small" else "n4_rectangle_certificate.json"
