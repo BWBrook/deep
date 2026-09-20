@@ -1,0 +1,37 @@
+Stage 0: exact affine kernels for 16 cases x 3 actions verified against direct averaging at Glo, Ghi (0.1s)
+Witness: {'feasible_minus': True, 'feasible_plus': True, 'Delta_minus': 0.1099032596679997, 'Delta_plus': 0.10990325308532987, 'Delta_plus_lt_minus': True, 'dDelta_dx_finite_diff': -0.03291334911889514}
+scan q=3/100 e0=1/50 e1= 1/2 c=1/50: P0:uniform neg  PR:uniform neg  PC:uniform neg  Delta:uniform pos
+scan q=3/100 e0=1/50 e1= 1/2 c=1/10: P0:uniform neg  PR:uniform neg  PC:uniform neg  Delta:uniform pos
+scan q=3/100 e0=1/50 e1=9/10 c=1/50: P0:uniform neg  PR:uniform neg  PC:uniform neg  Delta:uniform pos
+scan q=3/100 e0=1/50 e1=9/10 c=1/10: P0:uniform neg  PR:uniform neg  PC:uniform neg  Delta:uniform pos
+scan q=3/100 e0=1/10 e1= 1/2 c=1/50: P0:uniform neg  PR:uniform neg  PC:uniform neg  Delta:uniform pos
+scan q=3/100 e0=1/10 e1= 1/2 c=1/10: P0:uniform neg  PR:uniform neg  PC:uniform neg  Delta:uniform pos
+scan q=3/100 e0=1/10 e1=9/10 c=1/50: P0:uniform neg  PR:uniform neg  PC:uniform neg  Delta:uniform pos
+scan q=3/100 e0=1/10 e1=9/10 c=1/10: P0:uniform neg  PR:uniform neg  PC:uniform neg  Delta:uniform pos
+scan q= 3/50 e0=1/50 e1= 1/2 c=1/50: P0:uniform neg  PR:uniform neg  PC:uniform neg  Delta:uniform pos
+scan q= 3/50 e0=1/50 e1= 1/2 c=1/10: P0:uniform neg  PR:uniform neg  PC:uniform neg  Delta:uniform pos
+scan q= 3/50 e0=1/50 e1=9/10 c=1/50: P0:uniform neg  PR:uniform neg  PC:uniform neg  Delta:uniform pos
+scan q= 3/50 e0=1/50 e1=9/10 c=1/10: P0:uniform neg  PR:uniform neg  PC:uniform neg  Delta:uniform pos
+scan q= 3/50 e0=1/10 e1= 1/2 c=1/50: P0:uniform neg  PR:uniform neg  PC:uniform neg  Delta:uniform pos
+scan q= 3/50 e0=1/10 e1= 1/2 c=1/10: P0:uniform neg  PR:uniform neg  PC:uniform neg  Delta:uniform pos
+scan q= 3/50 e0=1/10 e1=9/10 c=1/50: P0:uniform neg  PR:uniform neg  PC:uniform neg  Delta:uniform pos
+scan q= 3/50 e0=1/10 e1=9/10 c=1/10: P0:uniform neg  PR:uniform neg  PC:uniform neg  Delta:uniform pos
+float scan done (1.9s)
+cert q=3/100 e0=1/50 e1= 1/2 c=1/50: P0:certified neg(0+,1-,0x,0?)  PR:certified neg(0+,1-,0x,0?)  PC:certified neg(0+,1-,0x,0?)  Delta:certified pos(1+,0-,0x,0?)  [99.9s]
+cert q=3/100 e0=1/50 e1= 1/2 c=1/10: P0:certified neg(0+,1-,0x,0?)  PR:certified neg(0+,1-,0x,0?)  PC:certified neg(0+,1-,0x,0?)  Delta:certified pos(1+,0-,0x,0?)  [80.3s]
+cert q=3/100 e0=1/50 e1=9/10 c=1/50: P0:certified neg(0+,1-,0x,0?)  PR:certified neg(0+,1-,0x,0?)  PC:certified neg(0+,1-,0x,0?)  Delta:certified pos(1+,0-,0x,0?)  [109.5s]
+cert q=3/100 e0=1/50 e1=9/10 c=1/10: P0:certified neg(0+,1-,0x,0?)  PR:certified neg(0+,1-,0x,0?)  PC:certified neg(0+,1-,0x,0?)  Delta:certified pos(1+,0-,0x,0?)  [91.0s]
+cert q=3/100 e0=1/10 e1= 1/2 c=1/50: P0:certified neg(0+,1-,0x,0?)  PR:certified neg(0+,1-,0x,0?)  PC:certified neg(0+,1-,0x,0?)  Delta:certified pos(1+,0-,0x,0?)  [93.3s]
+cert q=3/100 e0=1/10 e1= 1/2 c=1/10: P0:certified neg(0+,1-,0x,0?)  PR:certified neg(0+,1-,0x,0?)  PC:certified neg(0+,1-,0x,0?)  Delta:certified pos(1+,0-,0x,0?)  [72.0s]
+cert q=3/100 e0=1/10 e1=9/10 c=1/50: P0:certified neg(0+,1-,0x,0?)  PR:certified neg(0+,1-,0x,0?)  PC:certified neg(0+,1-,0x,0?)  Delta:certified pos(1+,0-,0x,0?)  [93.2s]
+cert q=3/100 e0=1/10 e1=9/10 c=1/10: P0:certified neg(0+,1-,0x,0?)  PR:certified neg(0+,1-,0x,0?)  PC:certified neg(0+,1-,0x,0?)  Delta:certified pos(1+,0-,0x,0?)  [70.9s]
+cert q= 3/50 e0=1/50 e1= 1/2 c=1/50: P0:certified neg(0+,1-,0x,0?)  PR:certified neg(0+,1-,0x,0?)  PC:certified neg(0+,1-,0x,0?)  Delta:certified pos(1+,0-,0x,0?)  [102.6s]
+cert q= 3/50 e0=1/50 e1= 1/2 c=1/10: P0:certified neg(0+,1-,0x,0?)  PR:certified neg(0+,1-,0x,0?)  PC:certified neg(0+,1-,0x,0?)  Delta:certified pos(1+,0-,0x,0?)  [81.9s]
+cert q= 3/50 e0=1/50 e1=9/10 c=1/50: P0:certified neg(0+,1-,0x,0?)  PR:certified neg(0+,1-,0x,0?)  PC:certified neg(0+,1-,0x,0?)  Delta:certified pos(1+,0-,0x,0?)  [110.8s]
+cert q= 3/50 e0=1/50 e1=9/10 c=1/10: P0:certified neg(0+,1-,0x,0?)  PR:certified neg(0+,1-,0x,0?)  PC:certified neg(0+,1-,0x,0?)  Delta:certified pos(1+,0-,0x,0?)  [90.7s]
+cert q= 3/50 e0=1/10 e1= 1/2 c=1/50: P0:certified neg(0+,1-,0x,0?)  PR:certified neg(0+,1-,0x,0?)  PC:certified neg(0+,1-,0x,0?)  Delta:certified pos(1+,0-,0x,0?)  [90.5s]
+cert q= 3/50 e0=1/10 e1= 1/2 c=1/10: P0:certified neg(0+,1-,0x,0?)  PR:certified neg(0+,1-,0x,0?)  PC:certified neg(0+,1-,0x,0?)  Delta:certified pos(1+,0-,0x,0?)  [70.4s]
+cert q= 3/50 e0=1/10 e1=9/10 c=1/50: P0:certified neg(0+,1-,0x,0?)  PR:certified neg(0+,1-,0x,0?)  PC:certified neg(0+,1-,0x,0?)  Delta:certified pos(1+,0-,0x,0?)  [90.6s]
+cert q= 3/50 e0=1/10 e1=9/10 c=1/10: P0:certified neg(0+,1-,0x,0?)  PR:certified neg(0+,1-,0x,0?)  PC:certified neg(0+,1-,0x,0?)  Delta:certified pos(1+,0-,0x,0?)  [70.4s]
+wrote n4_vertical_all.json
+exit 0
