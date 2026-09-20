@@ -36,6 +36,12 @@ An exact interval check also establishes a positive-area four-patch reversal
 rectangle in the specified mortality/connectivity coordinates
 (`n4_rectangle_audit.md`). The larger saved area report remains an aggregate
 without leaf-level certificates.
+The background-mortality study certifies reversal across an interval from
+0.04 to 0.14 at one interior parameter setting, and shows that reversal sets
+for the two fixed endpoint laws need not shrink monotonically with background
+mortality (`n4_background_mortality.md`). Raising background mortality at fixed
+shock mortality also weakens buffering's absolute benefit; this path does
+not isolate one biological mechanism.
 
 ## Layout
 
