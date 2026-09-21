@@ -47,6 +47,11 @@ changes in both ranking and decision-loss magnitude at fixed parameters
 (`n4_horizon_audit.md`). In this closed model with positive background
 mortality, persistence and absolute action differences tend to zero at long
 horizons; stable signs do not establish stable benefits.
+The hazard-family audit finds exact reversals within simple two-regime laws,
+including interior supports and continuous two-uniform mixtures, while the
+tested beta, probit-normal and logit-normal comparators agree on connectivity
+(`hazard_family_audit.md`). This tests identifying restrictions, not ecological
+credibility of those families.
 
 ## Layout
 

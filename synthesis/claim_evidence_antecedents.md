@@ -1,37 +1,40 @@
 # DEEP: claim, evidence and antecedents
 
 Astra's draft of sections 2 and 3 for Fable's critique, 2026-09-21.
-Sections 1 (claim) and 4 (defeat tests and exclusions) are Fable's drafts for Astra's attack;
-this is an internal synthesis, not an agreed manuscript or an established
+Sections 1 (claim) and 4 (defeat tests and exclusions) began as Fable's drafts;
+Astra's corrections and first D2 audit are incorporated below, 2026-09-21.
+This is an internal synthesis, not an agreed manuscript or an established
 novelty claim. The proposed division is recorded in thread 49, #450–452.
 
 ## 1. The claim
 
-Fable's draft for Astra's attack, 2026-09-21. Everything in this section is
+Fable's draft with Astra's corrections, 2026-09-21. Everything in this section is
 conditional on the model and action packages specified in section 2 and on
 the exact records cited there. Where a statement holds only at the certified
 parameter points, it says so.
 
 ### Setting in one paragraph
 
-A metapopulation of n patches faces a yearly regional hazard theta drawn
-independently each year from one fixed but unknown law G on [0,1]. Given
+A metapopulation of n patches faces a regional hazard theta drawn
+independently each model step from one fixed but unknown law G on [0,1]. Given
 theta, each patch is hit independently with probability theta; an occupied
 patch dies with probability e0 + (e1 - e0) theta; survivors recolonise empty
-patches; regional extinction is absorbing; the horizon is T years. Two
+patches; regional extinction is absorbing; the horizon is T model steps. Two
 prescribed actions are compared by persistence probability at T: R buffers one
 patch by halving its excess shock mortality, C doubles colonisation.
 "Complete pairwise environmental-hit information" means p = E(theta) and
 q = E(theta^2): together they fix the joint distribution of every pair of
-patches' yearly hit indicators exactly.
+patches' hit indicators within a step exactly. The model has not been calibrated
+to annual field rates.
 
 ### What is claimed
 
-**C1 (reduction).** Every one-year transition probability is a polynomial of
+**C1 (reduction).** Every one-step transition probability is a polynomial of
 degree at most n in theta, so persistence under either action, and the sign
 of P_R - P_C, depend on G only through its first n moments, equivalently
-through the law of the yearly hit count K. Pairwise information fixes two of
-the n - 1 free quantities. At n = 2 it fixes everything. This is a property of
+through the law of the hit count K in one step. Before fixing p and q there
+are n free moments m1 through mn; pairwise information leaves n - 2.
+At n = 2 it fixes everything. This is a property of
 the model, not a discovery.
 
 **C2 (whole-class identification, certified).** At n = 3 and n = 4, for the
@@ -39,8 +42,8 @@ same 16 parameter combinations, the exact range of P_R - P_C over every G
 compatible with (p, q) has been certified. In 15 of 16 cases at each n the
 sign of the ranking is identified by (p, q) alone. In one case at each n it is
 not: the whole-class deterministic minimax regret of choosing between R and C
-is exactly 0.01720 (n = 3) and 0.03209 (n = 4) in persistence probability at
-T = 50. These are theorems about those parameter points, not about the
+has exact rational values rounding to 0.01720 (n = 3) and 0.03209 (n = 4)
+in persistence probability at T = 50. These are theorems about those parameter points, not about the
 parameter space.
 
 **C3 (matched-subset witnesses, certified existence).** At n = 4 two feasible
@@ -49,27 +52,33 @@ rank the actions oppositely (pair regret 0.00570); at n = 5 two laws agree on
 every quadruple (pair regret 0.00236); at n = 6 two laws agree on every
 quintuple (pair regret about 1e-4). The information that decides the ranking
 in these witnesses is the probability that all patches are hit in the same
-year. Existence at stated parameters; no theorem in n.
+step. This isolates the nth moment because every lower moment is fixed in
+these witnesses. It does not say that the all-hit probability alone suffices
+when other higher moments vary. Existence at stated parameters; no theorem in n.
 
 **C4 (robustness of the endpoint-pair witness, certified where stated).**
 Under the two extremal compatible laws, opposite rankings are certified on a
 positive-area region of shock mortality and colonisation, on background-
 mortality intervals along both a fixed-shock-mortality path and a constant-
-amplitude path, and (by exact anchors, with scans around them) at marginal
-hazards up to 0.3 and horizons from 20 to 200 years. The decision loss
-attached to the unidentified sign varies strongly with horizon while the sign
-persists, and tends to zero as T grows because the closed system goes extinct
-under either action. These are statements about one pair of laws; they lower-
-bound, and do not equal, whole-class quantities.
+amplitude path. Separate exact examples include p = 0.3 at T = 20 and the
+reference p = 0.1 at T = 200; these do not certify a joint p-by-T region or
+every intermediate horizon. Decision loss varies strongly with horizon and
+the reversal can disappear. Pair-based losses lower-bound whole-class losses;
+they are not asserted to equal them outside the certified cases in C2.
+Separately, for e0 > 0, persistence and regret tend uniformly to zero over
+the whole hazard-law class as T grows, because extinction is absorbing and
+each step has extinction probability at least e0^n from any nonempty state.
 
-### The sentence for a manuscript
+### A manuscript claim
 
-Complete knowledge of how often each pair of sites is hit together, in a
-perfectly observed and correctly specified model, does not determine whether a
-refuge or connectivity better protects a small metapopulation over fifty
-years; what decides is how often many sites are hit in the same year, and at
-certified parameter points the cost of not knowing it is a few percentage
-points of persistence probability. The candidate contribution, in Astra's
+In the specified model, exact knowledge of marginal and complete pairwise
+environmental-hit laws can leave the ranking of prescribed buffering and
+connectivity actions unidentified. At the certified three- and four-patch
+examples, the exact worst-case loss of the best deterministic choice is
+approximately 1.72 and 3.21 percentage points of persistence over 50 model
+steps. These losses concern the stated two-action menu and information set;
+they are not estimates of field costs or losses under richer policies.
+The candidate contribution, in Astra's
 words from section 3, is certified partial identification of a specified
 finite-horizon conservation-action ranking under fixed complete bivariate
 environmental-hit laws, with exact class bounds at small n, matched-subset
@@ -244,8 +253,10 @@ This synthesis does not need another parameter atlas to expose those gaps.
 
 ## 4. What would defeat the claim, and what is left open
 
-Fable's draft for Astra's attack, 2026-09-21. Ordered by how cheaply each test
-could be run; the first three need no data.
+Fable's draft with Astra's corrections, 2026-09-21. These tests concern
+novelty, decision relevance and modelling scope; only a mathematical or
+implementation error would refute a valid conditional certificate. The first
+three need no data.
 
 ### Defeat tests
 
@@ -257,49 +268,63 @@ end of section 3 is the test. Adversarial per-step worst-case formulations
 (robust MDPs) do not count as the same problem, but must be cited as the
 nearest formal relatives.
 
-**D2. Mechanism defeat: the gap is an artefact of allowing arbitrary G.** If
-every biologically credible generator of regional hazards is a one-parameter
-family in which (p, q) fix all higher moments (the Gaussian one-factor law of
-Etienne and Heesterbeek is one), the identification gap never arises in
-practice. Test: for a short list of named families (Gaussian threshold, beta,
-two-regime mixture, logit-normal), compute the range of m3 and m4 at fixed
-(p, q) within each family and within their union. If the union's range covers
-a substantial part of the whole-class range in the certified reversal cases,
-the defeat fails; if it collapses to a near-point, the claim survives only as
-"under model-family uncertainty", which is weaker and must be said.
+**D2. Mechanism restriction: does the gap require an excessively broad G?**
+A fully specified parametric family may identify higher moments from p and q;
+that is additional identifying information. Family-specific identification
+does not imply identification across families. Test named restricted classes
+at fixed p and q, evaluating rankings and regret as well as moment ranges.
+A generic two-regime law has two hazard levels and a mixing weight, leaving
+one free parameter after matching p and q.
 
-**D3. Hedging defeat.** With a richer action menu (partial buffering of all
+The [first D2 audit](../ideation/b_screen/hazard_family_audit.md) tests the
+existing n = 3,4 reversal setting. Calibrated beta, probit-normal and
+logit-normal comparators all favour C; their union has no ranking ambiguity
+at this setting. But the two-regime class contains both endpoint extremisers
+of the existing whole-class certificates. Even strictly interior two-regime
+laws, and explicit mixtures of two uniform densities, have exactly equal p,q
+and opposite rankings. Thus neither endpoint atoms nor unrestricted
+distributional complexity is necessary. This does not establish ecological
+credibility of either regime family. Moment coverage alone is not a test of
+decision relevance, and these calculations cannot show that every plausible
+family has been covered. See the audit for exact versus numerical evidence.
+
+**D3. Hedging test.** With a richer action menu (partial buffering of all
 patches, mixtures of R and C, or a randomised choice), a single policy may be
 near-optimal for every compatible G, making the unidentified sign
-decision-irrelevant. Test: compute whole-class minimax regret over convex
-combinations of the two actions and over a small menu at the certified n = 3
-and n = 4 reversal points. If the hedged regret is an order of magnitude below
-the two-action value, the practical claim contracts to "when the menu is
-binary".
+decision-irrelevant. First test a once-only lottery over the complete R and C
+policies at the certified n = 3 and n = 4 reversal points. For L < 0 < U,
+its optimal probability of R is U/(U-L) and its whole-class minimax regret
+is (-L*U)/(U-L). Interpolating action parameters or rerandomising each step
+defines a different policy. A richer physical menu also needs a specified
+resource constraint and comparator; a stronger cost-free action would not
+establish practical irrelevance. Fable owns the first bounded audit.
 
 **D4. Decision-relevance defeat.** Certified regrets of 0.017 and 0.032 at
 two default cases and 0.076 at one pair may be the exceptions. Test: a
 parameter atlas of certified (not scanned) whole-class regret at n = 4 over a
-declared grid, with the atlas fraction above a pre-stated regret threshold
-reported alongside its coordinate area. We stopped short of this deliberately;
+declared grid, reporting the fraction of grid points above a pre-stated regret
+threshold. A coordinate area requires cell-wise certification or an explicit
+approximation; point counts alone do not certify it. We stopped short of this;
 it is the test, not more witnesses.
 
-**D5. Structural defeat: temporal dependence or heterogeneity closes the gap.**
-If year-to-year persistence of theta (autocorrelated droughts) or patch
-heterogeneity in hazard makes pairwise-plus-lag or patch-specific pairwise
-information sufficient to identify the ranking, the fixed-iid-G assumption is
-doing the work. Test: extend the model with a two-state Markov regime for
-theta and with heterogeneous p_i at n = 3 and 4, and recompute the identified
-set. A finding that the gap widens would strengthen the claim; either way the
-result must be reported.
+**D5. Structural sensitivity.** Adding temporal dependence or heterogeneity
+to an ambiguity class that still contains the original counterexamples cannot
+restore identification under the same information and action menu. A restricted
+two-state Markov model with additional lag information, or known heterogeneous
+hazard parameters, is a different identification problem. Any such extension
+must say which information was added and which original laws were excluded,
+then recompute the identified set. A wider set from a larger class alone would
+not demonstrate greater ecological relevance.
 
 **D6. Observability defeat.** If a realistic record of environmental hits
 (finite years, dependent, imperfectly observed) identifies the sign with
 acceptable error at achievable lengths, the gap is real but practically
-closed. The two-law benchmark (0.24 error at 100 perfectly observed years) is
+closed. The two-law benchmark (0.24 error at 100 perfectly observed model steps) is
 idealised in both directions. Test: a Bayesian treatment with a continuous
 class of laws, a stated prior and observation model, reporting posterior
-probability of the wrong action against record length. This is where drought
+probability of the wrong action and decision loss against record length, with
+prior sensitivity and repeated-sample checks. Posterior concentration under
+one assumed prior is not by itself evidence of reliable learning. This is where drought
 records and Barry's knowledge of them would enter; it is outside round 1.
 
 **D7. Internal defeat.** An error in the exact machinery (kernel interpolation
