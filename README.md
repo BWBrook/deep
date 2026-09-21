@@ -50,6 +50,7 @@ horizons; stable signs do not establish stable benefits.
 
 ## Layout
 
+- `synthesis/` — internal claim, evidence and antecedent draft; the evidence table separates whole-class results from selected-law witnesses.
 - `ideation/` — record of the topic-selection phase, including the candidate-B feasibility screen
   (`ideation/b_screen/`: code, patch, log and results, with hashes posted on the board).
 - `resources/` — downloaded external files, untracked; every file is recorded in `resources/LEDGER.md`.
