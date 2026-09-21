@@ -3,6 +3,7 @@
 Astra's draft of sections 2 and 3 for Fable's critique, 2026-09-21.
 Sections 1 (claim) and 4 (defeat tests and exclusions) began as Fable's drafts;
 Astra's corrections and first D2 audit are incorporated below, 2026-09-21.
+The subsequent bounded D1 search and D3 lottery audit are also incorporated.
 This is an internal synthesis, not an agreed manuscript or an established
 novelty claim. The proposed division is recorded in thread 49, #450–452.
 
@@ -46,6 +47,13 @@ has exact rational values rounding to 0.01720 (n = 3) and 0.03209 (n = 4)
 in persistence probability at T = 50. These are theorems about those parameter points, not about the
 parameter space.
 
+At these reversal points the two-regime family already contains both
+whole-class extremisers, so restricting to that family does not reduce these
+bounds. Allowing a once-only lottery over R and C reduces the exact minimax
+regrets to approximately 0.009917 (n = 3) and 0.025344 (n = 4), as documented
+in the [D3 audit](d3_lottery_audit.md). Neither statement extends to a richer
+physical action menu.
+
 **C3 (matched-subset witnesses, certified existence).** At n = 4 two feasible
 laws agree on the complete hit distribution of every triple of patches and
 rank the actions oppositely (pair regret 0.00570); at n = 5 two laws agree on
@@ -88,8 +96,9 @@ counterexamples, and an explicit decision-loss scale.
 
 Not a statement about occupancy records or occupancy-derived synchrony. Not
 about temporally dependent, spatially heterogeneous, or non-stationary hazards.
-Not about action menus beyond the prescribed pair, nor randomised or adaptive
-policies. Not a general-n theorem, a universal decay rate in n, or a nested or
+Not about action menus beyond the prescribed pair and a once-only lottery
+over its two complete policies; no within-horizon switching or adaptation.
+Not a general-n theorem, a universal decay rate in n, or a nested or
 monotone geometry of reversal sets in any parameter (an exact counterexample
 is in section 2). Not prevalence in ecological parameter space: grid counts
 under one law pair are not areas or frequencies. Not calibration to any
@@ -243,13 +252,19 @@ decision-loss scale. It remains to establish whether that combination is
 sufficiently new and scientifically useful; neither the number of examples
 nor model-to-model agreement answers that question.
 
-Before a novelty statement is accepted, the remaining bounded search should
-cover environmental-dependence ambiguity in stochastic population decision
-models, finite-state robust/partial-identification methods with one common
-law across time, and decision-value/learning results for higher-order event
-information. Methods that choose a new worst-case law at each time or state
-solve a different ambiguity problem and must not be conflated with ours.
-This synthesis does not need another parameter atlas to expose those gaps.
+The [bounded D1 search](d1_antecedent_search.md) now documents closer formal
+and conservation-decision antecedents. Fixed-parameter finite-horizon
+verification is established in [parametric Markov-chain analysis](https://doi.org/10.1007/s10703-023-00442-x);
+the audit explicitly maps our ranking question to that framework. Conservation
+planning with uncertain parameters, minimax regret and mixtures over policies
+is already studied by [Xu et al. (2021)](https://proceedings.mlr.press/v161/xu21a.html).
+Other inspected work addresses ecological information value and a single
+committed uncertain transition kernel. Therefore neither fixed-law semantics
+nor regret supplies generic novelty. A stepwise adversary would change our
+problem, but not all robust Markov formulations use one. No exact duplicate
+of the specific hit-law result was found in this bounded reading; absence
+has not been established. Another parameter atlas would not resolve whether
+the remaining ecological information result is a sufficient contribution.
 
 ## 4. What would defeat the claim, and what is left open
 
@@ -260,13 +275,13 @@ three need no data.
 
 ### Defeat tests
 
-**D1. Antecedent defeat.** A published treatment of environmental-dependence
-ambiguity in a stochastic metapopulation decision model, with one law fixed
-across time and bounds on a ranking or persistence, would reduce the
-contribution to the specific certificates. The bounded search named at the
-end of section 3 is the test. Adversarial per-step worst-case formulations
-(robust MDPs) do not count as the same problem, but must be cited as the
-nearest formal relatives.
+**D1. Antecedent test.** The bounded search in section 3 rules out generic
+novelty of fixed-parameter Markov bounds, minimax regret, policy mixtures and
+conservation information value. Parametric Markov verification directly
+contains our finite-horizon computation. The remaining candidate contribution
+is the ecological information restriction and its demonstrated consequences.
+An exact prior treatment of that restriction and ranking problem would narrow
+the contribution further. The search is closed for this pass, not exhaustive.
 
 **D2. Mechanism restriction: does the gap require an excessively broad G?**
 A fully specified parametric family may identify higher moments from p and q;
@@ -287,6 +302,11 @@ distributional complexity is necessary. This does not establish ecological
 credibility of either regime family. Moment coverage alone is not a test of
 decision relevance, and these calculations cannot show that every plausible
 family has been covered. See the audit for exact versus numerical evidence.
+In particular, three fitted single-component laws do not establish ranking
+identification over all unimodal distributions. Fable's proposed shape-based
+explanation remains a hypothesis pending its separate check. Modes of a
+latent hazard density and modes of its finite-patch hit-count distribution
+must not be equated, nor is easier estimation of modality established here.
 
 **D3. Hedging test.** With a richer action menu (partial buffering of all
 patches, mixtures of R and C, or a randomised choice), a single policy may be
@@ -297,7 +317,14 @@ its optimal probability of R is U/(U-L) and its whole-class minimax regret
 is (-L*U)/(U-L). Interpolating action parameters or rerandomising each step
 defines a different policy. A richer physical menu also needs a specified
 resource constraint and comparator; a stronger cost-free action would not
-establish practical irrelevance. Fable owns the first bounded audit.
+establish practical irrelevance.
+
+The [completed lottery audit](d3_lottery_audit.md) verifies whole-class regrets
+0.009917 and 0.025344 at the n = 3 and n = 4 reversal points. With a=-L and
+b=U positive, the ratio to deterministic regret is max(a,b)/(a+b), always
+in [1/2,1). Therefore the earlier order-of-magnitude reduction criterion was
+impossible for this lottery. These results quantify the remaining loss; they
+do not constitute survival of a demanding defeat test.
 
 **D4. Decision-relevance defeat.** Certified regrets of 0.017 and 0.032 at
 two default cases and 0.076 at one pair may be the exceptions. Test: a
@@ -344,6 +371,7 @@ itself is an adequate description of any regional driver.
 
 ### Proposed order
 
-D2 and D3 first: each is one analytic-plus-computational turn with no data and
-each could shrink the claim sharply. Then D1 as a bounded search. D4 only if
-the claim survives D2 and D3. D5 next. D6 is round 2.
+D1's bounded pass, the initial D2 family comparison and D3's once-only lottery
+are complete. Fable owns the remaining shape-restriction check. Interpret
+that result and assess a coherent ecological contribution before deciding
+whether D4 or D5 would materially advance it. D6 remains round 2.
