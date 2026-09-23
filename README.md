@@ -26,8 +26,12 @@ for each system size. For four patches, connectivity wins throughout the
 class in 12 cases, buffering in three, and the ranking reverses in one.
 The four-patch audit also gives two laws with identical complete triple-shock
 distributions and opposite intervention rankings (`n4_audit.md`). These are
-conditional model results, not claims about field systems. Bounds for five
-or more patches remain unresolved. A five-patch existence witness fixes all
+conditional model results, not claims about field systems. Sharp class bounds
+for five or more patches remain unresolved. Verified feasible-law pairs give
+deterministic regret lower bounds exceeding 8.067 and 9.817 percentage points
+at five and six patches; once-only lotteries still have lower bounds exceeding
+5.09 and 5.20 points (`n_scaling_audit.md`). These do not establish a monotonic
+trend in class regret with patch number. A five-patch existence witness fixes all
 complete four-patch shock distributions and still reverses the ranking
 (`n5_equal_quadruples.md`). A separate finite-record benchmark compares
 information in complete hit counts with all-hit event counts
@@ -57,6 +61,11 @@ Khinchin-unimodal hazard law at the four-patch reversal setting, with an
 advantage greater than 0.427 percentage points (`unimodal_audit.md`). This
 illustrates additional shape information restoring identification; it does
 not establish the empirical credibility of unimodality or biological regimes.
+A small explicit asymmetric perturbation also preserves the original complete
+pairwise hit laws and opposite action rankings (`asymmetric_pairwise_witness.md`).
+This establishes local robustness beyond exchangeability, not a calibrated
+spatial model. The proposed paper narrative is in
+[`synthesis/paper_argument.md`](synthesis/paper_argument.md).
 
 ## Layout
 

@@ -4,6 +4,8 @@ Astra's draft of sections 2 and 3 for Fable's critique, 2026-09-21.
 Sections 1 (claim) and 4 (defeat tests and exclusions) began as Fable's drafts;
 Astra's corrections and D2 shape-class audit are incorporated below, 2026-09-23.
 The subsequent bounded D1 search and D3 lottery audit are also incorporated.
+The patch-number audit and local asymmetric construction were added on
+2026-09-23; [the paper argument](paper_argument.md) proposes a shorter narrative.
 This is an internal synthesis, not an agreed manuscript or an established
 novelty claim. The proposed division is recorded in thread 49, #450–452.
 
@@ -63,6 +65,13 @@ The [shape-class audit](../ideation/b_screen/unimodal_audit.md) proves these
 statements at this parameter point; neither establishes biological regimes
 or empirical credibility of the restriction.
 
+The [patch-number audit](../ideation/b_screen/n_scaling_audit.md) separately
+verifies whole-class deterministic regret lower bounds above 0.08067 at n=5
+and 0.09817 at n=6 under the same p,q and ecological parameters. Even the
+once-only lottery has lower bounds above 0.05097 and 0.05202, respectively.
+These are larger than the exact n=3,4 values. They do not identify the n>=5
+class optima or prove a monotonic trend with patch number.
+
 **C3 (matched-subset witnesses, certified existence).** At n = 4 two feasible
 laws agree on the complete hit distribution of every triple of patches and
 rank the actions oppositely (pair regret 0.00570); at n = 5 two laws agree on
@@ -86,6 +95,14 @@ Separately, for e0 > 0, persistence and regret tend uniformly to zero over
 the whole hazard-law class as T grows, because extinction is absorbing and
 each step has extinction probability at least e0^n from any nonempty state.
 
+A separate [local asymmetric construction](../ideation/b_screen/asymmetric_pairwise_witness.md)
+perturbs both n=4 endpoint shock laws outside exchangeability while preserving
+every original pairwise hit distribution exactly. A trajectory-coupling
+bound proves opposite action rankings and pair regret above 0.00709. This
+small constructed perturbation establishes existence without exact symmetry;
+it does not validate substantial spatial heterogeneity or extend the
+exchangeable class bounds.
+
 ### A manuscript claim
 
 In the specified model, exact knowledge of marginal and complete pairwise
@@ -106,8 +123,10 @@ information can determine the ranking without changing the pairwise laws.
 
 ### What is not claimed
 
-Not a statement about occupancy records or occupancy-derived synchrony. Not
-about temporally dependent, spatially heterogeneous, or non-stationary hazards.
+Not a statement about occupancy records or occupancy-derived synchrony. The
+whole-class and shape certificates concern temporally iid exchangeable hazards.
+The local asymmetric witness does not establish results for general spatial
+heterogeneity, temporal dependence, or non-stationarity.
 Not about action menus beyond the prescribed pair and a once-only lottery
 over its two complete policies; no within-horizon switching or adaptation.
 Not a general-n theorem, a universal decay rate in n, or a nested or
@@ -162,6 +181,8 @@ or explicitly identify a numerical/aggregate result.
 | Equal triple-hit distributions | n=4, default parameters; additionally m3=.021; m4=.0171 or 1389/70000 | Complete labelled triple-hit laws agree, but Delta is -.00570317978 versus +.00598197568. Pair regret .00570317978. | [Constructive laws and exact reproduction](../ideation/b_screen/n4_audit.md). Feasible witnesses, not whole-class optimisation conditional on m3. |
 | Equal four-patch hit distributions | n=5, default parameters; common m3=337/18000,m4=773993/51840000 | Feasible fifth-moment endpoints give Delta=-.00283857955,+.00235757569; pair regret .00235757569. | [Witness](../ideation/b_screen/n5_equal_quadruples.json), [method](../ideation/b_screen/n5_equal_quadruples.md). Same complete four-patch environmental-hit laws. No n5 whole-class bounds. |
 | Equal five-patch hit distributions | n=6; default parameters at c=.1 and a second case c=.2; lower moments fixed within each pair | Certified endpoint signs reverse. Pair regret .00012115843 at c=.1 and .00007086475 at c=.2. | [Exact witnesses](../ideation/b_screen/n6_witness_check.json). Existence only. No general-n theorem, universal decay rate or ecological-frequency conclusion. |
+| Fixed-pairwise information at larger n | n=3..8, default parameters; only p,q fixed across each witness pair | Exact attained deterministic regret bounds exceed .08067 at n=5 and .09817 at n=6; lottery bounds exceed .05097 and .05202. | [Audit](../ideation/b_screen/n_scaling_audit.md), [rational receipt](../ideation/b_screen/n_scaling_audit.json). Class optima known only for n=3,4; neither increasing class regret through n=6 nor a class-wide saturation decline is proved. |
+| Local asymmetric shock laws | n=4, default parameters; original complete pairwise tables fixed | Explicit nonexchangeable shock-law pair retains opposite rankings and regret >.00709 via an exact coupling bound. | [Construction and proof](../ideation/b_screen/asymmetric_pairwise_witness.md). Small artificial perturbation; no new asymmetric kernel propagation, spatial calibration or general heterogeneous class bounds. |
 | Positive-area ecological-parameter witness | n=4,p=.1,q=.03,e0=.02,T=50; e1 in [.7995,.8005],c in [.1495,.1505] | Exact enclosures have opposite signs everywhere on a rectangle of coordinate area 1e-6. | [Audit and reproducible interval check](../ideation/b_screen/n4_rectangle_audit.md). Pair witness. The separate 907/1024 large-rectangle area report lacks saved leaves from that original run and is not needed for this conclusion. |
 | Fixed-e1 background-mortality intervals | n=4,p=.1,q=.03,T=50: (e1,c)=(.8,.15) or (.9,.45) | Reversal throughout e0 in [0,.03] or [.04,.14], respectively. At e0=.1 in the second setting, pair regret .07583193349. | [48 exact leaf certificates](../ideation/b_screen/n4_background_mortality.json), [interpretation](../ideation/b_screen/n4_background_mortality.md). Fixed e1 changes shock amplitude and buffering benefit as e0 changes. Pair reversal sets are not nested; no whole-class geometric conclusion. |
 | Constant-amplitude background intervals | n=4,p=.1,q=.03,T=50,c=.3,e1=e0+a | Reversal throughout e0 in [0,.04] for a=.5, [0,.08] for a=.7, [0,.12] for a=.88. The last is the whole admissible e0 interval at that a. | [Leaf certificates](../ideation/b_screen/n4_constant_amplitude_cert.json). Pair existence over these intervals; no certified absence beyond them, amplitude threshold, or universal shrinking-set theorem. |
@@ -348,12 +369,16 @@ impossible for this lottery. These results quantify the remaining loss; they
 do not constitute survival of a demanding defeat test.
 
 **D4. Decision-relevance defeat.** Certified regrets of 0.017 and 0.032 at
-two default cases and 0.076 at one pair may be the exceptions. Test: a
-parameter atlas of certified (not scanned) whole-class regret at n = 4 over a
-declared grid, reporting the fraction of grid points above a pre-stated regret
-threshold. A coordinate area requires cell-wise certification or an explicit
-approximation; point counts alone do not certify it. We stopped short of this;
-it is the test, not more witnesses.
+two default cases and larger witnessed losses may be the exceptions. The
+new n=5,6 bounds establish larger possible losses at those parameter points,
+not prevalence. A proposed atlas over a declared grid could count certified
+threshold exceedances. Exact feasible witnesses suffice to establish an
+exceedance; failure to find one cannot establish its absence without an upper
+bound. Such an atlas would report grid discoveries, not ecological frequencies
+or parameter-space area. Its decision purpose, grid and search budget remain
+to specify; it has not been launched. See [the paper argument](paper_argument.md)
+for the reporting contract and the reason a heuristic atlas is not a two-sided
+test of whether the effect is confined to a corner.
 
 **D5. Structural sensitivity.** Adding temporal dependence or heterogeneity
 to an ambiguity class that still contains the original counterexamples cannot
@@ -363,6 +388,11 @@ hazard parameters, is a different identification problem. Any such extension
 must say which information was added and which original laws were excluded,
 then recompute the identified set. A wider set from a larger class alone would
 not demonstrate greater ecological relevance.
+The new local asymmetric construction supplies a narrower positive result:
+opposite rankings persist for two explicitly nonexchangeable laws with exactly
+the original pairwise information. Its coupling proof defeats dependence on
+perfect symmetry, while leaving substantial heterogeneity and field relevance
+open.
 
 **D6. Observability defeat.** If a realistic record of environmental hits
 (finite years, dependent, imperfectly observed) identifies the sign with
@@ -393,7 +423,7 @@ itself is an adequate description of any regional driver.
 ### Proposed order
 
 D1's bounded pass, D2's family comparison and audited unimodal-class theorem,
-and D3's once-only lottery are complete. Next assess a coherent ecological
-contribution linking pairwise-information limits, decision loss and the
-shape restriction that restores identification, before deciding whether D4
-or D5 would materially advance it. D6 remains round 2.
+and D3's once-only lottery are complete. The patch-number witnesses have been
+audited, and the local asymmetric construction addresses one narrow D5
+objection. Fable's next review is the [corrected paper argument](paper_argument.md)
+and the new construction, before further atlas work. D6 remains round 2.
