@@ -1,0 +1,12 @@
+n=3: Delta found in [-0.02342, +0.01720]  regret>= 0.01720  endpoints Glo -0.02342 Ghi +0.01720  endpoints-extreme=True  certified [-0.02342, +0.01720]  exact min -0.023416 max 0.017202  P at Glo R 0.2569 C 0.2803  (1s)
+     min witness atoms [0.0, 0.3, 1.0] w [0.66667, 0.33333, -0.0] | max witness atoms [0.07778, 0.68075, 1.0] w [0.9759, -0.0, 0.0241]
+n=4: Delta found in [-0.12052, +0.03209]  regret>= 0.03209  endpoints Glo -0.12052 Ghi +0.03209  endpoints-extreme=True  certified [-0.12052, +0.03209]  exact min -0.12052 max 0.032093  P at Glo R 0.4720 C 0.5926  (2s)
+     min witness atoms [0.0, 0.3, 1.0] w [0.66667, 0.33333, -0.0] | max witness atoms [0.07778, 0.57024, 1.0] w [0.9759, -0.0, 0.0241]
+n=5: Delta found in [-0.13846, +0.08067]  regret>= 0.08067  endpoints Glo -0.13846 Ghi +0.08067  endpoints-extreme=True  exact min -0.138463 max 0.080673  P at Glo R 0.6830 C 0.8214  (3s)
+     min witness atoms [0.0, 0.3, 0.74202] w [0.66667, 0.33333, -0.0] | max witness atoms [0.07778, 0.6632, 1.0] w [0.9759, -0.0, 0.0241]
+n=6: Delta found in [-0.09817, +0.11066]  regret>= 0.09817  endpoints Glo -0.09817 Ghi +0.11066  endpoints-extreme=True  exact min -0.098171 max 0.110662  P at Glo R 0.8357 C 0.9339  (4s)
+     min witness atoms [0.0, 0.3, 0.95452] w [0.66667, 0.33333, -0.0] | max witness atoms [0.07778, 0.37178, 1.0] w [0.9759, -0.0, 0.0241]
+n=7: Delta found in [-0.05551, +0.12036]  regret>= 0.05551  endpoints Glo -0.05392 Ghi +0.12036  endpoints-extreme=False  exact min -0.055509 max 0.120356  P at Glo R 0.9240 C 0.9780  (5s)
+     min witness atoms [0.02882, 0.29205, 0.38097] w [0.79787, -0.0, 0.20213] | max witness atoms [0.07778, 0.8207, 1.0] w [0.9759, -0.0, 0.0241]
+n=8: Delta found in [-0.03189, +0.12063]  regret>= 0.03189  endpoints Glo -0.02548 Ghi +0.12063  endpoints-extreme=False  exact min -0.031886 max 0.120628  P at Glo R 0.9677 C 0.9931  (7s)
+     min witness atoms [0.04843, 0.25926, 0.4878] w [0.88262, -0.0, 0.11738] | max witness atoms [0.0431, 0.07778, 0.55731, 1.0] w [-0.0, 0.9759, -0.0, 0.0241]
