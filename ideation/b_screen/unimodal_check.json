@@ -1,0 +1,350 @@
+{
+ "p": "1/10",
+ "q": "3/100",
+ "e0": "1/50",
+ "e1": "9/10",
+ "c": "1/10",
+ "T": 50,
+ "xstar_upper_curve_root_bracket_m3": [
+  "4177210314157/206158430208000",
+  "50126523769919/2473901162496000"
+ ],
+ "lower_curve_root_bracket_m3": [
+  "8879837253229/412316860416000",
+  "53279023519409/2473901162496000"
+ ],
+ "class_m3_range": [
+  "9/1000",
+  "221/9000"
+ ],
+ "feasible_modes": [
+  "0",
+  "11/80"
+ ],
+ "mode_table": [
+  {
+   "mode": "0",
+   "mode_float": 0.0,
+   "m3min": 0.010125,
+   "m3max": 0.01871875,
+   "feasible": true,
+   "upper_law_Y": {
+    "atoms": [
+     "11/80",
+     "1"
+    ],
+    "weights": [
+     "64/69",
+     "5/69"
+    ]
+   }
+  },
+  {
+   "mode": "1/80",
+   "mode_float": 0.0125,
+   "m3min": 0.010489583333333333,
+   "m3max": 0.019079326923076925,
+   "feasible": true,
+   "upper_law_Y": {
+    "atoms": [
+     "23/208",
+     "79/80"
+    ],
+    "weights": [
+     "845/912",
+     "67/912"
+    ]
+   }
+  },
+  {
+   "mode": "1/40",
+   "mode_float": 0.025,
+   "m3min": 0.010883928571428572,
+   "m3max": 0.019357954545454546,
+   "feasible": true,
+   "upper_law_Y": {
+    "atoms": [
+     "37/440",
+     "39/40"
+    ],
+    "weights": [
+     "363/392",
+     "29/392"
+    ]
+   }
+  },
+  {
+   "mode": "3/80",
+   "mode_float": 0.0375,
+   "m3min": 0.011314903846153846,
+   "m3max": 0.01955830223880597,
+   "feasible": true,
+   "upper_law_Y": {
+    "atoms": [
+     "311/5360",
+     "77/80"
+    ],
+    "weights": [
+     "4489/4848",
+     "359/4848"
+    ]
+   }
+  },
+  {
+   "mode": "1/20",
+   "mode_float": 0.05,
+   "m3min": 0.011791666666666667,
+   "m3max": 0.019683823529411764,
+   "feasible": true,
+   "upper_law_Y": {
+    "atoms": [
+     "11/340",
+     "19/20"
+    ],
+    "weights": [
+     "289/312",
+     "23/312"
+    ]
+   }
+  },
+  {
+   "mode": "1/16",
+   "mode_float": 0.0625,
+   "m3min": 0.012326704545454545,
+   "m3max": 0.019737771739130435,
+   "feasible": true,
+   "upper_law_Y": {
+    "atoms": [
+     "13/1840",
+     "15/16"
+    ],
+    "weights": [
+     "1587/1712",
+     "125/1712"
+    ]
+   }
+  },
+  {
+   "mode": "3/40",
+   "mode_float": 0.075,
+   "m3min": 0.0129375,
+   "m3max": 0.019723214285714285,
+   "feasible": true,
+   "upper_law_Y": {
+    "atoms": [
+     "-1/56",
+     "37/40"
+    ],
+    "weights": [
+     "245/264",
+     "19/264"
+    ]
+   }
+  },
+  {
+   "mode": "7/80",
+   "mode_float": 0.0875,
+   "m3min": 0.013649305555555555,
+   "m3max": 0.01964304577464789,
+   "feasible": true,
+   "upper_law_Y": {
+    "atoms": [
+     "-241/5680",
+     "73/80"
+    ],
+    "weights": [
+     "5041/5424",
+     "383/5424"
+    ]
+   }
+  },
+  {
+   "mode": "1/10",
+   "mode_float": 0.1,
+   "m3min": 0.0145,
+   "m3max": 0.0195,
+   "feasible": true,
+   "upper_law_Y": {
+    "atoms": [
+     "-1/15",
+     "9/10"
+    ],
+    "weights": [
+     "27/29",
+     "2/29"
+    ]
+   }
+  },
+  {
+   "mode": "9/80",
+   "mode_float": 0.1125,
+   "m3min": 0.015549107142857142,
+   "m3max": 0.01929666095890411,
+   "feasible": true,
+   "upper_law_Y": {
+    "atoms": [
+     "-529/5840",
+     "71/80"
+    ],
+    "weights": [
+     "5329/5712",
+     "383/5712"
+    ]
+   }
+  },
+  {
+   "mode": "1/8",
+   "mode_float": 0.125,
+   "m3min": 0.016895833333333332,
+   "m3max": 0.019035472972972974,
+   "feasible": true,
+   "upper_law_Y": {
+    "atoms": [
+     "-169/1480",
+     "7/8"
+    ],
+    "weights": [
+     "1369/1464",
+     "95/1464"
+    ]
+   }
+  },
+  {
+   "mode": "11/80",
+   "mode_float": 0.1375,
+   "m3min": 0.01871875,
+   "m3max": 0.01871875,
+   "feasible": true,
+   "upper_law_Y": {
+    "atoms": [
+     "-11/80",
+     "69/80"
+    ],
+    "weights": [
+     "15/16",
+     "1/16"
+    ]
+   }
+  }
+ ],
+ "certificate": {
+  "m3max_uni_expr": "(-7500*m**2 + 1780*m + 599)/(8000*(5*m + 4))",
+  "gap_numerator": "193273528320000*m**2 - 24984199150495*m + 1272728794804",
+  "gap_denominator": "1030792151040000*m + 824633720832000",
+  "modes": [
+   "0",
+   "11/80"
+  ],
+  "numerator_roots_in_mode_interval": 0,
+  "numerator_sign_at_midpoint": 1,
+  "numerator_at_endpoints": [
+   "1272728794804",
+   "23863664902575/16"
+  ],
+  "denominator_roots_in_mode_interval": 0,
+  "denominator_sign_at_midpoint": 1,
+  "denominator_at_endpoints": [
+   "824633720832000",
+   "966367641600000"
+  ],
+  "certified_gap_positive": true,
+  "stationary_modes_in_interval": [
+   "-4/5 + sqrt(3)/2 ~ 0.0660254038"
+  ],
+  "argmax_mode": "-4/5 + sqrt(3)/2 ~ 0.0660254038",
+  "sup_m3_uni": "0.019740473581",
+  "sup_m3_uni_exact_if_rational": "algebraic (see stationary_modes)"
+ },
+ "inf_m3_uni_grid": 0.010125,
+ "extremal_law_checks": [
+  {
+   "label": "mode_0",
+   "mode": "0",
+   "law_theta": "mixture of Uniform[0.000000,0.137500] (w=0.927536) and Uniform[0.000000,1] (w=0.072464)",
+   "m3": "599/32000",
+   "m3_float": 0.01871875,
+   "m4": "46589/3200000",
+   "m4_float": 0.0145590625,
+   "m3_below_xstar": true,
+   "Delta_float": -0.023743504574524305,
+   "PR_float": 0.43184851756842774,
+   "PC_float": 0.455592022142952,
+   "Delta_negative": true,
+   "m4_within_lens": true
+  },
+  {
+   "label": "mode_sup",
+   "mode": "11/80",
+   "law_theta": "mixture of Uniform[0.000000,0.137500] (w=0.937500) and Uniform[0.137500,1] (w=0.062500)",
+   "m3": "599/32000",
+   "m3_float": 0.01871875,
+   "m4": "46589/3200000",
+   "m4_float": 0.0145590625,
+   "m3_below_xstar": true,
+   "Delta_float": -0.023743504574524305,
+   "PR_float": 0.43184851756842774,
+   "PC_float": 0.455592022142952,
+   "Delta_negative": true,
+   "m4_within_lens": true
+  },
+  {
+   "label": "near_argmax_mode",
+   "mode": "33/500",
+   "m3": "68381/3464000",
+   "m3_float": 0.019740473441108543,
+   "m4": "14621110637/937445000000",
+   "m4_float": 0.015596766356426244,
+   "law_theta": "mixture of Uniform[0.066000,0.066051] (w=0.927245) and Uniform[0.066000,1] (w=0.072755)",
+   "Delta_float": -0.015965488433553693,
+   "PR_float": 0.4279582026921578,
+   "PC_float": 0.4439236911257115,
+   "Delta_negative": true,
+   "m3_below_xstar": true
+  }
+ ],
+ "unimodal_class_Delta_upper_bound": {
+  "x": "79/4000",
+  "x_float": 0.01975,
+  "m4_on_upper_curve": "20439/1120000",
+  "Delta_float": -0.004272706373120518,
+  "PR_float": 0.42503305862794144,
+  "PC_float": 0.429305765001062,
+  "argument": "Delta increasing in m4 over lens (certified) and increasing in m3 along the upper curve (certified); sup m3_uni < x < x*"
+ },
+ "unimodal_sup_Delta_float_search": {
+  "grid": "111 modes x 81 y3 values, y4 at Hausdorff max",
+  "sup_Delta_found": -0.01596556913337993,
+  "at": {
+   "mode": 0.06625,
+   "y3": 0.059215624086850646,
+   "m3": 0.019740462662337664,
+   "m4": 0.015596755456056386,
+   "interior_atom_a": -0.0004491341991341542
+  },
+  "note": "exploratory float grid; a lower estimate of the true unimodal sup, which the certified bound above exceeds"
+ },
+ "full_class_Delta_range": {
+  "min": -0.1205203070043943,
+  "max": 0.03209273498500964,
+  "source": "n4_boundary_results.json (certified, width <= 1e-9)"
+ },
+ "y3_bound_random_check": {
+  "tests": 20000,
+  "violations": 0,
+  "worst_excess": 0.0
+ },
+ "khinchin_identity_exact_check_failures": 0,
+ "q6_reference": {
+  "feasible_modes": [
+   "0",
+   "1/40"
+  ],
+  "inf_m3_uni_grid": 0.0405,
+  "sup_m3_uni_grid": 0.04490673247807355,
+  "class_m3_range": [
+   0.036,
+   0.058222222222222224
+  ]
+ },
+ "seconds": 1.4
+}

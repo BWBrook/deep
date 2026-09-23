@@ -1,0 +1,93 @@
+feasible modes for unimodal laws with (p,q)=(1/10,3/100): m in [0, 11/80] = [0.0000, 0.1375]
+full conditional-iid class m3 range: [0.009000, 0.024556]; ambiguity band (certified roots) m3 in (0.0202621368, 0.0215364398)
+  m=0.0000  m3_uni in [0.010125, 0.018719]  feasible=True   Y-law for max: atoms [0.1375, 1.0] weights [0.927536231884058, 0.07246376811594203]
+  m=0.0125  m3_uni in [0.010490, 0.019079]  feasible=True   Y-law for max: atoms [0.11057692307692307, 0.9875] weights [0.9265350877192983, 0.07346491228070176]
+  m=0.0250  m3_uni in [0.010884, 0.019358]  feasible=True   Y-law for max: atoms [0.08409090909090909, 0.975] weights [0.9260204081632653, 0.07397959183673469]
+  m=0.0375  m3_uni in [0.011315, 0.019558]  feasible=True   Y-law for max: atoms [0.058022388059701495, 0.9625] weights [0.9259488448844885, 0.07405115511551155]
+  m=0.0500  m3_uni in [0.011792, 0.019684]  feasible=True   Y-law for max: atoms [0.03235294117647059, 0.95] weights [0.9262820512820513, 0.07371794871794872]
+  m=0.0625  m3_uni in [0.012327, 0.019738]  feasible=True   Y-law for max: atoms [0.007065217391304348, 0.9375] weights [0.9269859813084113, 0.07301401869158879]
+  m=0.0750  m3_uni in [0.012937, 0.019723]  feasible=True   Y-law for max: atoms [-0.017857142857142856, 0.925] weights [0.928030303030303, 0.07196969696969698]
+  m=0.0875  m3_uni in [0.013649, 0.019643]  feasible=True   Y-law for max: atoms [-0.04242957746478873, 0.9125] weights [0.9293879056047197, 0.07061209439528024]
+  m=0.1000  m3_uni in [0.014500, 0.019500]  feasible=True   Y-law for max: atoms [-0.06666666666666667, 0.9] weights [0.9310344827586207, 0.06896551724137931]
+  m=0.1125  m3_uni in [0.015549, 0.019297]  feasible=True   Y-law for max: atoms [-0.09058219178082191, 0.8875] weights [0.9329481792717087, 0.06705182072829131]
+  m=0.1250  m3_uni in [0.016896, 0.019035]  feasible=True   Y-law for max: atoms [-0.11418918918918919, 0.875] weights [0.9351092896174863, 0.06489071038251366]
+  m=0.1375  m3_uni in [0.018719, 0.018719]  feasible=True   Y-law for max: atoms [-0.1375, 0.8625] weights [0.9375, 0.0625]
+certificate: {
+ "gap_numerator": "193273528320000*m**2 - 24984199150495*m + 1272728794804",
+ "gap_denominator": "1030792151040000*m + 824633720832000",
+ "modes": [
+  "0",
+  "11/80"
+ ],
+ "numerator_roots_in_mode_interval": 0,
+ "numerator_sign_at_midpoint": 1,
+ "numerator_at_endpoints": [
+  "1272728794804",
+  "23863664902575/16"
+ ],
+ "denominator_roots_in_mode_interval": 0,
+ "denominator_sign_at_midpoint": 1,
+ "denominator_at_endpoints": [
+  "824633720832000",
+  "966367641600000"
+ ],
+ "certified_gap_positive": true,
+ "stationary_modes_in_interval": [
+  "-4/5 + sqrt(3)/2 ~ 0.0660254038"
+ ],
+ "argmax_mode": "-4/5 + sqrt(3)/2 ~ 0.0660254038",
+ "sup_m3_uni": "0.019740473581",
+ "sup_m3_uni_exact_if_rational": "algebraic (see stationary_modes)"
+}
+m3max_uni(m) = (-7500*m**2 + 1780*m + 599)/(8000*(5*m + 4))
+inf m3 over unimodal laws (401-point mode grid, float): 0.01012500  [full class min 0.00900000]
+extremal unimodal law: {
+ "label": "mode_0",
+ "mode": "0",
+ "law_theta": "mixture of Uniform[0.000000,0.137500] (w=0.927536) and Uniform[0.000000,1] (w=0.072464)",
+ "m3": "599/32000",
+ "m3_float": 0.01871875,
+ "m4": "46589/3200000",
+ "m4_float": 0.0145590625,
+ "m3_below_xstar": true,
+ "Delta_float": -0.023743504574524305,
+ "PR_float": 0.43184851756842774,
+ "PC_float": 0.455592022142952,
+ "Delta_negative": true,
+ "m4_within_lens": true
+}
+extremal unimodal law: {
+ "label": "mode_sup",
+ "mode": "11/80",
+ "law_theta": "mixture of Uniform[0.000000,0.137500] (w=0.937500) and Uniform[0.137500,1] (w=0.062500)",
+ "m3": "599/32000",
+ "m3_float": 0.01871875,
+ "m4": "46589/3200000",
+ "m4_float": 0.0145590625,
+ "m3_below_xstar": true,
+ "Delta_float": -0.023743504574524305,
+ "PR_float": 0.43184851756842774,
+ "PC_float": 0.455592022142952,
+ "Delta_negative": true,
+ "m4_within_lens": true
+}
+near-argmax unimodal law: {
+ "label": "near_argmax_mode",
+ "mode": "33/500",
+ "m3": "68381/3464000",
+ "m3_float": 0.019740473441108543,
+ "m4": "14621110637/937445000000",
+ "m4_float": 0.015596766356426244,
+ "law_theta": "mixture of Uniform[0.066000,0.066051] (w=0.927245) and Uniform[0.066000,1] (w=0.072755)",
+ "Delta_float": -0.015965488433553693,
+ "PR_float": 0.4279582026921578,
+ "PC_float": 0.4439236911257115,
+ "Delta_negative": true,
+ "m3_below_xstar": true
+}
+unimodal-class upper bound on Delta: Delta(G) <= Delta(79/4000, U(79/4000)) = -0.00427271 for every unimodal G  (PR 0.425033, PC 0.429306)
+float search: largest Delta over unimodal laws found -0.01596557 at {'mode': 0.06625, 'y3': 0.059215624086850646, 'm3': 0.019740462662337664, 'm4': 0.015596755456056386, 'interior_atom_a': -0.0004491341991341542}
+y3 bound random check: 0 violations in 20000 random discrete Y laws (worst excess 0.00e+00)
+Khinchin moment identity: 0 failures in 200 exact random uniform mixtures
+q=6/100 reference: {'feasible_modes': ['0', '1/40'], 'inf_m3_uni_grid': 0.0405, 'sup_m3_uni_grid': 0.04490673247807355, 'class_m3_range': [0.036, 0.058222222222222224]}
+done in 1.4s
