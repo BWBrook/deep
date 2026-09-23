@@ -6,6 +6,8 @@ Astra's corrections and D2 shape-class audit are incorporated below, 2026-09-23.
 The subsequent bounded D1 search and D3 lottery audit are also incorporated.
 The patch-number audit and local asymmetric construction were added on
 2026-09-23; [the paper argument](paper_argument.md) proposes a shorter narrative.
+The finite-exchangeable extension and independent labelled-kernel audit now
+distinguish the scalar-hazard class from arbitrary symmetric shock laws.
 This is an internal synthesis, not an agreed manuscript or an established
 novelty claim. The proposed division is recorded in thread 49, #450–452.
 
@@ -29,6 +31,11 @@ patch by halving its excess shock mortality, C doubles colonisation.
 q = E(theta^2): together they fix the joint distribution of every pair of
 patches' hit indicators within a step exactly. The model has not been calibrated
 to annual field rates.
+
+This baseline class, denoted S, is narrower than finite exchangeability E
+or the full class L of labelled hit laws with the same pairwise tables.
+Unless explicitly stated otherwise, the whole-class and shape certificates
+below concern S. The new C5 witnesses concern E and hence also L.
 
 ### What is claimed
 
@@ -103,6 +110,18 @@ small constructed perturbation establishes existence without exact symmetry;
 it does not validate substantial spatial heterogeneity or extend the
 exchangeable class bounds.
 
+**C5 (dependence-class sensitivity, exact witnesses).** At n=4,p=.1,
+e0=.02,e1=.9,c=.1,T=50, symmetric hit laws outside S give deterministic
+regret lower bounds above .06433915 at q=.03 and .05342336 at q=.06.
+The latter case was identified throughout S (R wins), so its ranking depends
+on the scalar conditional-iid restriction in addition to the pairwise tables.
+All four laws violate S's third-moment bounds while retaining exactly the
+required pairwise laws. The [independent labelled audit](../ideation/b_screen/labelled_class_audit.md)
+verifies these witnesses, not class optima in E or L. Choosing which one
+patch to buffer cannot remove these pair bounds because all buffering sites
+are tied within each symmetric law. The local asymmetric construction is
+retained as supplementary robustness evidence.
+
 ### A manuscript claim
 
 In the specified model, exact knowledge of marginal and complete pairwise
@@ -120,11 +139,17 @@ counterexamples, and an explicit decision-loss scale.
 At the four-patch example, a precise unimodality restriction on the latent
 hazard law restores identification. This shows how additional shape
 information can determine the ranking without changing the pairwise laws.
+Conversely, removing the scalar conditional-iid restriction can defeat a
+positive ranking certificate even while retaining symmetry and exactly the
+same pairwise tables. Dependence assumptions supply identifying information
+that should be distinguished from the environmental-hit information itself.
 
 ### What is not claimed
 
 Not a statement about occupancy records or occupancy-derived synchrony. The
-whole-class and shape certificates concern temporally iid exchangeable hazards.
+whole-class and shape certificates concern temporally iid scalar-hazard mixtures,
+not arbitrary finite exchangeable laws. The new broader-class results are
+attained witnesses, not complete identification certificates in E or L.
 The local asymmetric witness does not establish results for general spatial
 heterogeneity, temporal dependence, or non-stationarity.
 Not about action menus beyond the prescribed pair and a once-only lottery
@@ -153,6 +178,10 @@ probabilities. The packages are prescribed, not demonstrated to have equal
 costs. Delta(G)=P_R(G)-P_C(G) concerns persistence at the stated finite T.
 All laws in a comparison retain the same ecological parameters and action
 packages. These are not comparisons of separately fitted models.
+For C5, a fixed distribution Q over the complete labelled hit vector replaces
+the scalar hazard representation. Draws remain independent across model steps;
+mortality and recolonisation rules are unchanged. All pairwise hit tables
+remain exactly equal within each comparison.
 
 For a deterministic, once-only choice from {R,C}, if the *whole-class*
 attained extrema of Delta are L and U, the exact minimax regret is
@@ -183,6 +212,7 @@ or explicitly identify a numerical/aggregate result.
 | Equal five-patch hit distributions | n=6; default parameters at c=.1 and a second case c=.2; lower moments fixed within each pair | Certified endpoint signs reverse. Pair regret .00012115843 at c=.1 and .00007086475 at c=.2. | [Exact witnesses](../ideation/b_screen/n6_witness_check.json). Existence only. No general-n theorem, universal decay rate or ecological-frequency conclusion. |
 | Fixed-pairwise information at larger n | n=3..8, default parameters; only p,q fixed across each witness pair | Exact attained deterministic regret bounds exceed .08067 at n=5 and .09817 at n=6; lottery bounds exceed .05097 and .05202. | [Audit](../ideation/b_screen/n_scaling_audit.md), [rational receipt](../ideation/b_screen/n_scaling_audit.json). Class optima known only for n=3,4; neither increasing class regret through n=6 nor a class-wide saturation decline is proved. |
 | Local asymmetric shock laws | n=4, default parameters; original complete pairwise tables fixed | Explicit nonexchangeable shock-law pair retains opposite rankings and regret >.00709 via an exact coupling bound. | [Construction and proof](../ideation/b_screen/asymmetric_pairwise_witness.md). Small artificial perturbation; no new asymmetric kernel propagation, spatial calibration or general heterogeneous class bounds. |
+| Finite exchangeable laws beyond scalar mixtures | n=4,p=.1,e0=.02,e1=.9,c=.1,T=50; q=.03 or .06 | Symmetric witnesses give regret >.06433915 and >.05342336. At q=.06 the scalar class identifies R but the finite-exchangeable class does not. | [Independent labelled-kernel audit](../ideation/b_screen/labelled_class_audit.md), [exact receipt](../ideation/b_screen/labelled_class_audit.json). No larger-class extrema or identified classification of the other 14 cases. |
 | Positive-area ecological-parameter witness | n=4,p=.1,q=.03,e0=.02,T=50; e1 in [.7995,.8005],c in [.1495,.1505] | Exact enclosures have opposite signs everywhere on a rectangle of coordinate area 1e-6. | [Audit and reproducible interval check](../ideation/b_screen/n4_rectangle_audit.md). Pair witness. The separate 907/1024 large-rectangle area report lacks saved leaves from that original run and is not needed for this conclusion. |
 | Fixed-e1 background-mortality intervals | n=4,p=.1,q=.03,T=50: (e1,c)=(.8,.15) or (.9,.45) | Reversal throughout e0 in [0,.03] or [.04,.14], respectively. At e0=.1 in the second setting, pair regret .07583193349. | [48 exact leaf certificates](../ideation/b_screen/n4_background_mortality.json), [interpretation](../ideation/b_screen/n4_background_mortality.md). Fixed e1 changes shock amplitude and buffering benefit as e0 changes. Pair reversal sets are not nested; no whole-class geometric conclusion. |
 | Constant-amplitude background intervals | n=4,p=.1,q=.03,T=50,c=.3,e1=e0+a | Reversal throughout e0 in [0,.04] for a=.5, [0,.08] for a=.7, [0,.12] for a=.88. The last is the whole admissible e0 interval at that a. | [Leaf certificates](../ideation/b_screen/n4_constant_amplitude_cert.json). Pair existence over these intervals; no certified absence beyond them, amplitude threshold, or universal shrinking-set theorem. |
@@ -394,6 +424,13 @@ the original pairwise information. Its coupling proof defeats dependence on
 perfect symmetry, while leaving substantial heterogeneity and field relevance
 open.
 
+The finite-exchangeable extension now supplies a more consequential result:
+the scalar conditional-iid model identifies R at q=.06 in the highlighted
+case, but other symmetric laws with the same pairwise tables reverse the
+ranking. This identifies a specific modelling restriction responsible for
+a positive result. It does not equate nonrepresentability with a hard
+footprint cutoff or establish ecological plausibility of the broader class.
+
 **D6. Observability defeat.** If a realistic record of environmental hits
 (finite years, dependent, imperfectly observed) identifies the sign with
 acceptable error at achievable lengths, the gap is real but practically
@@ -425,5 +462,7 @@ itself is an adequate description of any regional driver.
 D1's bounded pass, D2's family comparison and audited unimodal-class theorem,
 and D3's once-only lottery are complete. The patch-number witnesses have been
 audited, and the local asymmetric construction addresses one narrow D5
-objection. Fable's next review is the [corrected paper argument](paper_argument.md)
-and the new construction, before further atlas work. D6 remains round 2.
+objection. The audited finite-exchangeable witnesses sharpen the class question.
+Fable's next review is the [revised abstract](abstract.md), the class comparison,
+and the [bounded failure-region contract](failure_region_contract.md), which
+qualifies the necessary monotonicity before a full trace. D6 remains round 2.

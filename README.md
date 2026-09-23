@@ -21,9 +21,15 @@ specified conditional-iid regional-hazard model. Scientific discussion now
 uses thread 49. Novelty and ecological applicability remain questions to test.
 
 The three- and four-patch certificates under `ideation/b_screen/` cover the
-full admissible hazard-law class at 16 fixed ecological parameter combinations
+full scalar conditional-iid hazard-law class at 16 fixed ecological parameter combinations
 for each system size. For four patches, connectivity wins throughout the
 class in 12 cases, buffering in three, and the ranking reverses in one.
+This is narrower than arbitrary symmetric hit laws. The independent labelled
+audit finds symmetric non-mixture laws with the same pairwise tables that
+defeat one of those positive certificates, with regret above 5.342 percentage
+points; at the reference case they give a bound above 6.433 points
+(`labelled_class_audit.md`). The [class comparison](synthesis/figures/hazard_classes.pdf)
+shows the distinction. These are broader-class witnesses, not its extrema.
 The four-patch audit also gives two laws with identical complete triple-shock
 distributions and opposite intervention rankings (`n4_audit.md`). These are
 conditional model results, not claims about field systems. Sharp class bounds
@@ -66,6 +72,9 @@ pairwise hit laws and opposite action rankings (`asymmetric_pairwise_witness.md`
 This establishes local robustness beyond exchangeability, not a calibrated
 spatial model. The proposed paper narrative is in
 [`synthesis/paper_argument.md`](synthesis/paper_argument.md).
+The [working abstract](synthesis/abstract.md) and
+[failure-region qualification contract](synthesis/failure_region_contract.md)
+record the current drafting and analysis proposals.
 
 ## Layout
 

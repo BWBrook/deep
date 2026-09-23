@@ -1,6 +1,6 @@
 # Proposed paper argument after the shape and patch-number audits
 
-Astra, 2026-09-23, responding to Fable #470. This is an internal argument for
+Astra, 2026-09-23, responding to Fable #470 and revised after #482. This is an internal argument for
 critique, not a venue decision or a claim of established novelty. The detailed
 [evidence ledger](claim_evidence_antecedents.md) remains the source for scopes
 and certificates; it should not be copied wholesale into the paper.
@@ -15,7 +15,11 @@ connectivity and impose a quantifiable worst-case loss. At the four-patch
 reference setting, one precise additional restriction on the latent hazard
 law—Khinchin-unimodality—restores the ranking. The contribution is this
 information problem and its demonstrated decision consequences, not the
-existence of higher moments or a new optimisation principle.
+existence of higher moments or a new optimisation principle. The new
+finite-exchangeable witnesses also show that conditional independence given
+a scalar hazard can itself supply the information needed for a ranking:
+one formerly identified case becomes unidentified when that restriction
+is removed, without changing its pairwise hit tables.
 
 Prefer “complete pairwise environmental-hit laws” to an unqualified
 “synchrony.” Observed occupancy or abundance synchrony is a different object.
@@ -28,17 +32,20 @@ not calibrated to equal cost.
    then give the n=3,4 whole-class certificates. The 15/16 identified counts
    describe a chosen design, not ecological prevalence. In the reversal case,
    complete lower-order hit laws can agree while the actions rank oppositely.
-   Use n=4 as the main illustration; put n=5,6 matched-subset constructions
-   in the supplement.
+   Use n=4 as the main illustration; distinguish scalar mixtures S, arbitrary
+   finite exchangeable hit laws E and labelled laws L. The new reversal lies
+   already in E, so it cannot be attributed to asymmetry. Put n=5,6
+   matched-subset constructions in the supplement.
 2. **Decision consequence and its limits.** Give the exact deterministic
    regrets at n=3,4 and the newly audited witness lower bounds at larger n.
    A once-only lottery reduces the two-action minimax regret by at most half;
    richer physical policies remain open. Include compact evidence that
    reversals survive parameter perturbations and depend on the horizon.
-   The [asymmetric construction](../ideation/b_screen/asymmetric_pairwise_witness.md)
-   also shows that exact exchangeability is unnecessary for existence, while
-   preserving every original pairwise hit table. It establishes local
-   structural robustness, not a realistic spatial extension.
+   The [finite-exchangeable extension](../ideation/b_screen/labelled_class_audit.md)
+   gives four-patch regret bounds above .06433915 and .05342336 at the two
+   highlighted q values, and defeats one formerly identified ranking. Move
+   the local asymmetric construction to supplementary material: its result
+   remains valid but the class comparison is more consequential.
 3. **Information that restores the ranking.** State the full
    Khinchin-unimodal-class theorem and its sufficient margin. Show how its
    third-moment ceiling stays below the ambiguity band. The exact m3
@@ -50,9 +57,9 @@ not calibrated to equal cost.
 | Figure | Main content | Purpose and constraint |
 |---|---|---|
 | 1. Model and information | Shared hazard, hits, mortality, recolonisation; a complete pairwise table and the unknown higher-order moments | Define the exact information set and action packages before discussing synchrony. |
-| 2. Identification and restoration | The n=4 moment lens, the two certified boundary-root brackets and sign regions, endpoint laws, and the unimodal m3 ceiling | Unite the counterexample and the shape theorem. Shade the m3 ceiling as an outer restriction, not the exact unimodal-attainable region in (m3,m4). A sampled interior zero contour must be labelled numerical; boundary root certificates do not certify an entire contour. Move the 16-case range bars and mode-optimisation algebra to the supplement. |
+| 2. Identification, model restriction and restoration | The scalar lens inside the finite-exchangeable polygon, new opposite-sign witnesses, and the unimodal m3 ceiling at the reference case | The [class-geometry draft](figures/hazard_classes.pdf) shows two q settings. If adding the unimodal ceiling, label it as an outer restriction, not the exact unimodal-attainable region in (m3,m4). A sampled interior zero contour must be labelled numerical; boundary root certificates do not certify an entire contour. Move the 16-case range bars and mode-optimisation algebra to the supplement. |
 | 3. What pairwise agreement misses | For the n=4 equal-triples pair, the complete triple distributions coincide, while the full four-patch count distributions differ; show the action differences | Display all K categories. Equality of lower-order marginals does not imply equal full-count probabilities except at K=n. The n=5,6 counterparts can be supplementary. |
-| 4. Decision loss | Exact n=3,4 class regrets, larger-n witness lower bounds, once-only lottery comparison, and a concise horizon panel | Visually distinguish exact optima from lower bounds. No curve implying a certified trend between patch numbers. Small parameter-rectangle evidence can be supplementary rather than a large atlas panel. |
+| 4. Decision loss | Exact n=3,4 scalar-class regrets, larger-n witness lower bounds, once-only lottery comparison, and a concise horizon panel | Visually distinguish exact optima from lower bounds. Add relative extinction risks only with their laws and absolute probabilities identified; they are not minimax relative-risk results. No curve implying a certified trend between patch numbers. |
 
 ## Corrections to the proposed spine
 
@@ -136,3 +143,48 @@ atlas contract would require all of the following:
 The remaining substantive question is whether this conditional information
 result warrants a full theoretical paper, and which single realism or action
 comparison would most threaten it. More cells alone cannot decide that.
+
+## Update after the finite-exchangeable comparison
+
+Fable's new comparison changes the argument more than an atlas would: a
+positive ranking certificate under scalar mixtures fails for other symmetric
+laws with exactly the same pairwise tables. Use the hierarchy S subset E
+subset L as ecological model assumptions, not a generic lesson about increasing
+uncertainty. Neither positive pairwise correlation nor the possibility of a
+whole-region hit identifies the scalar representation. The unimodal theorem
+remains a sufficient condition in S at one reference point, not a theorem
+about all symmetric disturbances. Its shape restriction concerns the shared
+hit probability theta, not the shock-mortality severity parameter e1.
+
+The [revised abstract](abstract.md) incorporates this finding. The
+[bounded failure-region contract](failure_region_contract.md) proposes at
+most eight new exact qualification points before any full trace. The proposed
+two-root shortcut requires derivative certificates and is not universally
+equivalent to ranking nonidentification. Existing background-mortality
+intervals already rule out describing reversal as confined to the original
+low-e0,c=.1 corner; broader region geometry remains unresolved.
+
+### Absolute and relative extinction risks
+
+These values were computed from exact persistence results using
+E_R=1-P_R and E_C=1-P_C. The ratio is the worse action's extinction risk
+divided by the better action's risk **at the stated law**; it is not a new
+minimax optimisation or a ratio for every admissible law.
+
+| n and law | E_R | E_C | Worse/better risk | Absolute persistence loss |
+|---|---:|---:|---:|---:|
+| 5, Glo | .317016 | .178553 | 1.7755 | .138463 |
+| 5, Ghi | .469058 | .549731 | 1.1720 | .080673 |
+| 6, Glo | .164268 | .066097 | 2.4853 | .098171 |
+| 6, Ghi | .392200 | .502861 | 1.2822 | .110662 |
+| 8, Glo | .032335 | .006859 | 4.7145 | .025476 |
+| 8, saved interior minimum witness | .061130 | .029244 | 2.0903 | .031886 |
+
+Except for n8 Glo, all inputs are retained in `n_scaling_audit.json`.
+The n8 Glo row was re-evaluated exactly with `n_scaling_audit.persistence_direct`
+for atoms (0,3/10) and weights (2/3,1/3), separately for R and C.
+The larger risk ratio at Glo accompanies a smaller absolute loss than the
+interior witness. These scales are complementary; neither may be substituted
+for the other's optimisation criterion. The n5 minimax deterministic action
+is C on the endpoint pair and its worst-law ratio is about 1.172, so the
+phrase “five- and six-patch losses double extinction risk” is not valid.
