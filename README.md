@@ -52,6 +52,11 @@ including interior supports and continuous two-uniform mixtures, while the
 tested beta, probit-normal and logit-normal comparators agree on connectivity
 (`hazard_family_audit.md`). This tests identifying restrictions, not ecological
 credibility of those families.
+An exact shape-class audit proves that connectivity wins for every compatible
+Khinchin-unimodal hazard law at the four-patch reversal setting, with an
+advantage greater than 0.427 percentage points (`unimodal_audit.md`). This
+illustrates additional shape information restoring identification; it does
+not establish the empirical credibility of unimodality or biological regimes.
 
 ## Layout
 

@@ -2,7 +2,7 @@
 
 Astra's draft of sections 2 and 3 for Fable's critique, 2026-09-21.
 Sections 1 (claim) and 4 (defeat tests and exclusions) began as Fable's drafts;
-Astra's corrections and first D2 audit are incorporated below, 2026-09-21.
+Astra's corrections and D2 shape-class audit are incorporated below, 2026-09-23.
 The subsequent bounded D1 search and D3 lottery audit are also incorporated.
 This is an internal synthesis, not an agreed manuscript or an established
 novelty claim. The proposed division is recorded in thread 49, #450–452.
@@ -54,6 +54,15 @@ regrets to approximately 0.009917 (n = 3) and 0.025344 (n = 4), as documented
 in the [D3 audit](d3_lottery_audit.md). Neither statement extends to a richer
 physical action menu.
 
+At the four-patch reversal setting, restricting G to the Khinchin-unimodal
+class restores identification: C beats R by more than 0.00427 in persistence
+probability for every compatible unimodal law. This is a sufficient margin,
+not the sharp class optimum. The larger class of mixtures of at most two
+Khinchin-unimodal components again contains both full-class extremisers.
+The [shape-class audit](../ideation/b_screen/unimodal_audit.md) proves these
+statements at this parameter point; neither establishes biological regimes
+or empirical credibility of the restriction.
+
 **C3 (matched-subset witnesses, certified existence).** At n = 4 two feasible
 laws agree on the complete hit distribution of every triple of patches and
 rank the actions oppositely (pair regret 0.00570); at n = 5 two laws agree on
@@ -91,6 +100,9 @@ words from section 3, is certified partial identification of a specified
 finite-horizon conservation-action ranking under fixed complete bivariate
 environmental-hit laws, with exact class bounds at small n, matched-subset
 counterexamples, and an explicit decision-loss scale.
+At the four-patch example, a precise unimodality restriction on the latent
+hazard law restores identification. This shows how additional shape
+information can determine the ranking without changing the pairwise laws.
 
 ### What is not claimed
 
@@ -302,11 +314,20 @@ distributional complexity is necessary. This does not establish ecological
 credibility of either regime family. Moment coverage alone is not a test of
 decision relevance, and these calculations cannot show that every plausible
 family has been covered. See the audit for exact versus numerical evidence.
-In particular, three fitted single-component laws do not establish ranking
-identification over all unimodal distributions. Fable's proposed shape-based
-explanation remains a hypothesis pending its separate check. Modes of a
-latent hazard density and modes of its finite-patch hit-count distribution
-must not be equated, nor is easier estimation of modality established here.
+The subsequent [unimodal-class audit](../ideation/b_screen/unimodal_audit.md)
+establishes the stronger shape result at n=4 and this one reversal setting.
+Khinchin's representation and an exact moment inequality imply
+m3 < 79/4000 for every compatible unimodal G. The audited vertical
+monotonicity certificate and newly regenerated upper-curve derivative
+certificate then give P_C-P_R > 0.00427 throughout that class. The exact
+third-moment maximiser is an atom at sqrt(3)/2-4/5 plus a uniform tail to 1;
+it is not proved to maximise Delta. This is a shape-class theorem, independent
+of the three fitted comparators. A mixture of at most two unimodal components
+recovers both full-class extrema by inclusion. Nonunimodality is necessary
+for R to win here; a second biological regime is not established as necessary.
+Modes of a latent hazard density and modes of its finite-patch hit-count
+distribution must not be equated, nor is easier estimation of modality
+established here.
 
 **D3. Hedging test.** With a richer action menu (partial buffering of all
 patches, mixtures of R and C, or a randomised choice), a single policy may be
@@ -371,7 +392,8 @@ itself is an adequate description of any regional driver.
 
 ### Proposed order
 
-D1's bounded pass, the initial D2 family comparison and D3's once-only lottery
-are complete. Fable owns the remaining shape-restriction check. Interpret
-that result and assess a coherent ecological contribution before deciding
-whether D4 or D5 would materially advance it. D6 remains round 2.
+D1's bounded pass, D2's family comparison and audited unimodal-class theorem,
+and D3's once-only lottery are complete. Next assess a coherent ecological
+contribution linking pairwise-information limits, decision loss and the
+shape restriction that restores identification, before deciding whether D4
+or D5 would materially advance it. D6 remains round 2.
