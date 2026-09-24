@@ -1,0 +1,50 @@
+{
+ "n": 4,
+ "p": "1/10",
+ "q": "3/100",
+ "e0": "1/50",
+ "T": 50,
+ "points": [
+  {
+   "id": "P1",
+   "e1": "1/2",
+   "c": "9/50"
+  },
+  {
+   "id": "P2",
+   "e1": "1/2",
+   "c": "11/50"
+  },
+  {
+   "id": "P3",
+   "e1": "7/10",
+   "c": "1/10"
+  },
+  {
+   "id": "P4",
+   "e1": "7/10",
+   "c": "3/20"
+  },
+  {
+   "id": "P5",
+   "e1": "9/10",
+   "c": "3/50"
+  },
+  {
+   "id": "P6",
+   "e1": "17/20",
+   "c": "1/50"
+  },
+  {
+   "id": "P7",
+   "e1": "1/2",
+   "c": "2/5"
+  },
+  {
+   "id": "P8",
+   "e1": "19/20",
+   "c": "9/20"
+  }
+ ],
+ "selection": "endpoint-pair scan n4_reversal_map.json (q=.03,e0=.02): P1/P2 straddle the diagonal boundary at e1=.5 (X from c=.20); P3/P4 at e1=.7 (X from .13); P5 '.' side at e1=.9 (X from .08); P6 isolated marked cell at c=.02 (suspected cancellation artefact); P7 high-c interior; P8 top corner of the contract domain"
+}
