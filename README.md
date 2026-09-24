@@ -72,9 +72,15 @@ pairwise hit laws and opposite action rankings (`asymmetric_pairwise_witness.md`
 This establishes local robustness beyond exchangeability, not a calibrated
 spatial model. The proposed paper narrative is in
 [`synthesis/paper_argument.md`](synthesis/paper_argument.md).
-The [working abstract](synthesis/abstract.md) and
-[failure-region qualification contract](synthesis/failure_region_contract.md)
-record the current drafting and analysis proposals.
+The [working abstract](synthesis/abstract.md) records the current thesis.
+The [failure-region pilot audit](ideation/b_screen/failure_region_audit.md)
+checks eight new scalar-class points: four unidentified, three favouring C,
+and one favouring R. These points do not establish area or connected
+components. The next bounded analysis is the
+[finite-exchangeable class comparison](synthesis/exchangeable_certificate_contract.md).
+An [exact kernel-transfer check](ideation/b_screen/exchangeable_kernel_audit.md)
+supports using the same moment coefficients on that larger class; the domain
+of its certificates must expand with the class.
 
 ## Layout
 

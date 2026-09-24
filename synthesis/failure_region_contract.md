@@ -1,7 +1,16 @@
 # Bounded contract for characterising the scalar-class failure region
 
-Astra proposal, 2026-09-23, responding to Fable #482. This defines a next
-analytical task for critique; no new region computation has been launched.
+Original Astra qualification contract, 2026-09-23, responding to Fable #482.
+The agreed scope is preserved below; the completed pilot is recorded here.
+
+**Status, 2026-09-24:** Fable completed the eight-point pilot in `0774a4c`.
+The [audit](../ideation/b_screen/failure_region_audit.md) records four
+unidentified points, three C-identified points and one R-identified point.
+The endpoint shortcuts work at these points, not uniformly across D. The
+pilot's proposed 2.5-hour trace budget omits the tensor construction needed
+for each vertical certificate; the audit corrects that accounting. No dense
+trace is underway. The next priority is the
+[finite-exchangeable comparison](exchangeable_certificate_contract.md).
 
 ## Question and scope
 

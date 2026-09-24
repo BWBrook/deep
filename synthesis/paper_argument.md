@@ -1,6 +1,6 @@
 # Proposed paper argument after the shape and patch-number audits
 
-Astra, 2026-09-23, responding to Fable #470 and revised after #482. This is an internal argument for
+Astra, 2026-09-24, responding to Fable #470 and revised after #482 and #499. This is an internal argument for
 critique, not a venue decision or a claim of established novelty. The detailed
 [evidence ledger](claim_evidence_antecedents.md) remains the source for scopes
 and certificates; it should not be copied wholesale into the paper.
@@ -112,7 +112,7 @@ examples are striking.
 
 ## Next analysis: choose a question before an atlas
 
-Do not launch the proposed 648-cell atlas in this turn. A positive certified
+Defer the proposed ecological atlas. A positive certified
 witness count would describe that chosen grid, whereas absence of found
 witnesses would not establish absence of reversals. It is therefore not the
 proposed two-sided test of whether the effect is common or confined to a
@@ -120,8 +120,8 @@ corner. A grid within the same scalar-hazard model would also not answer
 the stated construction objection. The local asymmetric witness above is
 a direct, bounded answer to the exact-symmetry version of that objection.
 
-Fable's next review should address the corrected paper argument and this
-new witness. If a broader magnitude map is still necessary, specify its
+The finite-exchangeable class comparison now has priority. If a broader
+magnitude map is still necessary, specify its
 decision purpose and freeze its grid and search budget first. A defensible
 atlas contract would require all of the following:
 
@@ -156,13 +156,31 @@ remains a sufficient condition in S at one reference point, not a theorem
 about all symmetric disturbances. Its shape restriction concerns the shared
 hit probability theta, not the shock-mortality severity parameter e1.
 
-The [revised abstract](abstract.md) incorporates this finding. The
-[bounded failure-region contract](failure_region_contract.md) proposes at
-most eight new exact qualification points before any full trace. The proposed
-two-root shortcut requires derivative certificates and is not universally
-equivalent to ranking nonidentification. Existing background-mortality
-intervals already rule out describing reversal as confined to the original
-low-e0,c=.1 corner; broader region geometry remains unresolved.
+The [revised abstract](abstract.md) leads with how unobserved higher-order hit
+structure can change the decision. Fable completed the eight-point
+[failure-region qualification](failure_region_contract.md); the
+[audit](../ideation/b_screen/failure_region_audit.md) records four new
+unidentified points, three identified for C and one for R. At those points,
+vertical and boundary monotonicity justify exact endpoint class extrema.
+The two-root shortcut still requires those certificates at any new point.
+
+Strict opposite-sign witnesses establish reversal in neighbourhoods by
+continuity. The pilot does not establish a second connected component, a
+large fraction of D, or half-plane geometry. P6 at the low-c boundary is a
+valid witness, but its connection to the other witnesses is unresolved.
+C-identified and unidentified sample pairs imply a transition somewhere
+between them, not a unique boundary crossing or a certified curve.
+Existing background-mortality intervals already rule out confinement to
+the original low-e0,c=.1 corner.
+
+The next task is the [bounded E-class comparison](exchangeable_certificate_contract.md).
+The [kernel audit](../ideation/b_screen/exchangeable_kernel_audit.md) proves
+the same moment coefficients apply throughout finite exchangeability, while
+retaining the buffered patch's state separately. It also certifies all
+polygon-edge monotonicities at the two reference cases. Full-polygon
+derivative certificates remain to be computed; the scalar-lens pruning must
+not be reused. Completing the original 16-case comparison would quantify
+the identifying contribution of the scalar representation directly.
 
 ### Absolute and relative extinction risks
 
