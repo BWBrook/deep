@@ -1,6 +1,6 @@
 # Proposed paper argument after the shape and patch-number audits
 
-Astra, 2026-09-24, responding to Fable #470 and revised after #482 and #499. This is an internal argument for
+Astra, 2026-09-24, responding to Fable #470 and revised through #509. This is an internal argument for
 critique, not a venue decision or a claim of established novelty. The detailed
 [evidence ledger](claim_evidence_antecedents.md) remains the source for scopes
 and certificates; it should not be copied wholesale into the paper.
@@ -16,10 +16,13 @@ reference setting, one precise additional restriction on the latent hazard
 law—Khinchin-unimodality—restores the ranking. The contribution is this
 information problem and its demonstrated decision consequences, not the
 existence of higher moments or a new optimisation principle. The new
-finite-exchangeable witnesses also show that conditional independence given
+finite-exchangeable certificates also show that conditional independence given
 a scalar hazard can itself supply the information needed for a ranking:
 one formerly identified case becomes unidentified when that restriction
-is removed, without changing its pairwise hit tables.
+is removed, without changing its pairwise hit tables. Across the 16 tested
+cases, however, the deterministic minimax action is unchanged by expanding
+from S to E. State this alongside the changed guarantees and optimal lotteries;
+loss of a uniform ranking is not itself a change in every decision rule.
 
 Prefer “complete pairwise environmental-hit laws” to an unqualified
 “synchrony.” Observed occupancy or abundance synchrony is a different object.
@@ -35,15 +38,17 @@ not calibrated to equal cost.
    Use n=4 as the main illustration; distinguish scalar mixtures S, arbitrary
    finite exchangeable hit laws E and labelled laws L. The new reversal lies
    already in E, so it cannot be attributed to asymmetry. Put n=5,6
-   matched-subset constructions in the supplement.
+   matched-subset constructions in the supplement. The
+   [Result 1 draft](results_identification.md) and [16-case table](class_identification_table.md)
+   now report full S/E ranges and their different decision implications.
 2. **Decision consequence and its limits.** Give the exact deterministic
    regrets at n=3,4 and the newly audited witness lower bounds at larger n.
    A once-only lottery reduces the two-action minimax regret by at most half;
    richer physical policies remain open. Include compact evidence that
    reversals survive parameter perturbations and depend on the horizon.
-   The [finite-exchangeable extension](../ideation/b_screen/labelled_class_audit.md)
-   gives four-patch regret bounds above .06433915 and .05342336 at the two
-   highlighted q values, and defeats one formerly identified ranking. Move
+   The [finite-exchangeable certificates](../ideation/b_screen/exchangeable_certificate_audit.md)
+   give sharp four-patch regrets of approximately .06433916 and .05342337 at
+   the two highlighted q values, and defeat one formerly identified ranking. Move
    the local asymmetric construction to supplementary material: its result
    remains valid but the class comparison is more consequential.
 3. **Information that restores the ranking.** State the full
@@ -57,7 +62,7 @@ not calibrated to equal cost.
 | Figure | Main content | Purpose and constraint |
 |---|---|---|
 | 1. Model and information | Shared hazard, hits, mortality, recolonisation; a complete pairwise table and the unknown higher-order moments | Define the exact information set and action packages before discussing synchrony. |
-| 2. Identification, model restriction and restoration | The scalar lens inside the finite-exchangeable polygon, new opposite-sign witnesses, and the unimodal m3 ceiling at the reference case | The [class-geometry draft](figures/hazard_classes.pdf) shows two q settings. If adding the unimodal ceiling, label it as an outer restriction, not the exact unimodal-attainable region in (m3,m4). A sampled interior zero contour must be labelled numerical; boundary root certificates do not certify an entire contour. Move the 16-case range bars and mode-optimisation algebra to the supplement. |
+| 2. Identification, model restriction and restoration | The scalar lens inside the finite-exchangeable polygon, its certified extremisers, and the unimodal m3 ceiling at the reference case | The [class-geometry draft](figures/hazard_classes.pdf) shows two q settings. The [certified 16-case range comparison](figures/class_identification.pdf) can accompany it or be supplementary. If adding the unimodal ceiling, label it as an outer restriction, not the exact unimodal-attainable region in (m3,m4). A sampled interior zero contour must be labelled numerical. |
 | 3. What pairwise agreement misses | For the n=4 equal-triples pair, the complete triple distributions coincide, while the full four-patch count distributions differ; show the action differences | Display all K categories. Equality of lower-order marginals does not imply equal full-count probabilities except at K=n. The n=5,6 counterparts can be supplementary. |
 | 4. Decision loss | Exact n=3,4 scalar-class regrets, larger-n witness lower bounds, once-only lottery comparison, and a concise horizon panel | Visually distinguish exact optima from lower bounds. Add relative extinction risks only with their laws and absolute probabilities identified; they are not minimax relative-risk results. No curve implying a certified trend between patch numbers. |
 
@@ -173,14 +178,22 @@ between them, not a unique boundary crossing or a certified curve.
 Existing background-mortality intervals already rule out confinement to
 the original low-e0,c=.1 corner.
 
-The next task is the [bounded E-class comparison](exchangeable_certificate_contract.md).
-The [kernel audit](../ideation/b_screen/exchangeable_kernel_audit.md) proves
-the same moment coefficients apply throughout finite exchangeability, while
-retaining the buffered patch's state separately. It also certifies all
-polygon-edge monotonicities at the two reference cases. Full-polygon
-derivative certificates remain to be computed; the scalar-lens pruning must
-not be reused. Completing the original 16-case comparison would quantify
-the identifying contribution of the scalar representation directly.
+The [bounded E-class comparison](exchangeable_certificate_contract.md) is
+complete for the original 16 cases. The [kernel audit](../ideation/b_screen/exchangeable_kernel_audit.md)
+supports the extension; the [certificate audit](../ideation/b_screen/exchangeable_certificate_audit.md)
+checks its full-domain proofs and natural degree-50 edge representation.
+All class bounds have zero attained/outer gaps. Fable's degree-100 edge
+representation is exact degree elevation, not a different objective.
+
+The next task is a substantive review of the [Result 1 draft](results_identification.md)
+and its mechanistic anchor. Starting from all patches occupied, C cannot
+change one-step regional persistence, while R strictly improves it in the
+studied cases. Higher-order hit probabilities enter R's one-step advantage
+explicitly. The longer-horizon C rankings therefore involve future occupancy
+dynamics; explaining that trade-off would strengthen the ecological argument
+more than adding another grid. The draft includes the exact one-step identity
+for independent challenge and avoids attributing the full-horizon result to
+that identity alone.
 
 ### Absolute and relative extinction risks
 

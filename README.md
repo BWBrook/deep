@@ -24,12 +24,15 @@ The three- and four-patch certificates under `ideation/b_screen/` cover the
 full scalar conditional-iid hazard-law class at 16 fixed ecological parameter combinations
 for each system size. For four patches, connectivity wins throughout the
 class in 12 cases, buffering in three, and the ranking reverses in one.
-This is narrower than arbitrary symmetric hit laws. The independent labelled
-audit finds symmetric non-mixture laws with the same pairwise tables that
-defeat one of those positive certificates, with regret above 5.342 percentage
-points; at the reference case they give a bound above 6.433 points
-(`labelled_class_audit.md`). The [class comparison](synthesis/figures/hazard_classes.pdf)
-shows the distinction. These are broader-class witnesses, not its extrema.
+This is narrower than arbitrary symmetric hit laws. Full certificates for
+that larger finite-exchangeable class identify 14 of the same 16 cases and
+leave two unidentified, with sharp regrets of approximately 5.342 and 6.434
+percentage points (`exchangeable_certificate_audit.md`). The earlier labelled
+witnesses attain those extrema. The [range comparison](synthesis/figures/class_identification.pdf)
+and [class geometry](synthesis/figures/hazard_classes.pdf) show how the scalar
+assumption contributes information. The deterministic minimax choice remains
+unchanged in all 16 cases; its guarantee and optimal once-only lottery change.
+These are full finite-exchangeable bounds, not bounds over all labelled laws.
 The four-patch audit also gives two laws with identical complete triple-shock
 distributions and opposite intervention rankings (`n4_audit.md`). These are
 conditional model results, not claims about field systems. Sharp class bounds
@@ -76,8 +79,9 @@ The [working abstract](synthesis/abstract.md) records the current thesis.
 The [failure-region pilot audit](ideation/b_screen/failure_region_audit.md)
 checks eight new scalar-class points: four unidentified, three favouring C,
 and one favouring R. These points do not establish area or connected
-components. The next bounded analysis is the
-[finite-exchangeable class comparison](synthesis/exchangeable_certificate_contract.md).
+components. The [finite-exchangeable class comparison](synthesis/exchangeable_certificate_contract.md)
+is now complete, with the [Result 1 draft](synthesis/results_identification.md)
+ready for substantive review.
 An [exact kernel-transfer check](ideation/b_screen/exchangeable_kernel_audit.md)
 supports using the same moment coefficients on that larger class; the domain
 of its certificates must expand with the class.

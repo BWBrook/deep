@@ -8,8 +8,9 @@ The patch-number audit and local asymmetric construction were added on
 2026-09-23; [the paper argument](paper_argument.md) proposes a shorter narrative.
 The finite-exchangeable extension and independent labelled-kernel audit now
 distinguish the scalar-hazard class from arbitrary symmetric shock laws.
-The 2026-09-24 pilot audit and kernel-transfer check qualify the next
-finite-exchangeable class comparison without claiming its extrema yet.
+The 2026-09-24 finite-exchangeable certificates extend the comparison to
+whole-class extrema at the original 16 cases; the accompanying audit records
+which calculations were independently reproduced.
 This is an internal synthesis, not an agreed manuscript or an established
 novelty claim. The proposed division is recorded in thread 49, #450–452.
 
@@ -37,7 +38,9 @@ to annual field rates.
 This baseline class, denoted S, is narrower than finite exchangeability E
 or the full class L of labelled hit laws with the same pairwise tables.
 Unless explicitly stated otherwise, the whole-class and shape certificates
-below concern S. The new C5 witnesses concern E and hence also L.
+below concern S. C5 includes full E-class bounds at the original 16 cases.
+Its reversal witnesses also belong to L, but its identified cases are not
+certificates for L.
 
 ### What is claimed
 
@@ -112,17 +115,29 @@ small constructed perturbation establishes existence without exact symmetry;
 it does not validate substantial spatial heterogeneity or extend the
 exchangeable class bounds.
 
-**C5 (dependence-class sensitivity, exact witnesses).** At n=4,p=.1,
-e0=.02,e1=.9,c=.1,T=50, symmetric hit laws outside S give deterministic
-regret lower bounds above .06433915 at q=.03 and .05342336 at q=.06.
-The latter case was identified throughout S (R wins), so its ranking depends
-on the scalar conditional-iid restriction in addition to the pairwise tables.
-All four laws violate S's third-moment bounds while retaining exactly the
-required pairwise laws. The [independent labelled audit](../ideation/b_screen/labelled_class_audit.md)
-verifies these witnesses, not class optima in E or L. Choosing which one
-patch to buffer cannot remove these pair bounds because all buffering sites
-are tied within each symmetric law. The local asymmetric construction is
-retained as supplementary robustness evidence.
+**C5 (dependence-class sensitivity, whole-class bounds in E).** At n=4,p=.1,
+T=50, the original 16-case design has 12 uniform C rankings, two uniform R
+rankings and two unidentified rankings in E. The [certified comparison](class_identification_table.md)
+and [audit](../ideation/b_screen/exchangeable_certificate_audit.md) distinguish
+these results from S's 12 C, three R and one unidentified case.
+
+At e0=.02,e1=.9,c=.1, the sharp E-class deterministic regrets round to
+.06433915869 at q=.03 and .05342336776 at q=.06. Once-only lottery regrets
+round to .04734540104 and .03621838623, respectively. The four earlier
+[independently checked labelled laws](../ideation/b_screen/labelled_class_audit.md)
+attain the E extrema and remain witnesses in L. All four violate S's
+third-moment bounds while retaining the required pairwise tables. The q=.06
+case was identified throughout S (R wins); its uniform ranking therefore
+used the scalar representation as well as pairwise information.
+
+The deterministic minimax action is unchanged between S and E at all 16
+cases. In the q=.06 case it remains R, now with positive worst-case regret;
+the optimal once-only lottery changes from certain R to Pr(R)=.67795026.
+At the reference q=.03 case it remains C. These statements distinguish a
+uniform ranking, a robust decision rule, and its performance guarantee.
+Choosing which patch to buffer cannot improve the E-class results because
+all buffering sites are equivalent under every symmetric law. E-identified
+cases remain unresolved in L; no L-class optimum is claimed.
 
 ### A manuscript claim
 
@@ -149,9 +164,10 @@ that should be distinguished from the environmental-hit information itself.
 ### What is not claimed
 
 Not a statement about occupancy records or occupancy-derived synchrony. The
-whole-class and shape certificates concern temporally iid scalar-hazard mixtures,
-not arbitrary finite exchangeable laws. The new broader-class results are
-attained witnesses, not complete identification certificates in E or L.
+shape certificate concerns S. Whole-class identification is certified for S
+at the specified n=3,4 cases and for E at the specified n=4 cases. Temporal
+independence remains an assumption throughout. Broader labelled-class L
+results remain attained witnesses, not complete identification certificates.
 The local asymmetric witness does not establish results for general spatial
 heterogeneity, temporal dependence, or non-stationarity.
 Not about action menus beyond the prescribed pair and a once-only lottery
@@ -175,8 +191,9 @@ They do not fix bivariate occupancy histories after mortality and recolonisation
 The model starts with all patches occupied and has absorbing regional extinction.
 Time horizons below count model steps, without field calibration.
 
-R halves excess shock mortality at one patch; C doubles all colonisation
-probabilities. The packages are prescribed, not demonstrated to have equal
+R halves excess shock mortality at one patch; C doubles the per-source
+colonisation parameter c, so recolonisation from m survivors changes from
+1-(1-c)^m to 1-(1-2c)^m. The packages are prescribed, not demonstrated to have equal
 costs. Delta(G)=P_R(G)-P_C(G) concerns persistence at the stated finite T.
 All laws in a comparison retain the same ecological parameters and action
 packages. These are not comparisons of separately fitted models.
@@ -194,8 +211,9 @@ This follows because the loss of choosing R is max(0,-Delta), and the loss
 of choosing C is max(0,Delta). If L,U instead describe only a selected
 pair of feasible laws, the same expression is the pair's exact value and a
 **lower bound** for the full class. Zero pair regret does not establish
-zero full-class regret. Randomisation, adaptive management and other actions
-are excluded. This distinction makes the previously certified n3/n4 extrema
+zero full-class regret. This expression concerns a deterministic action;
+the once-only lottery is analysed separately in D3 and C5. Adaptive management
+and additional physical actions remain unexamined. The certified n3/n4 extrema are
 immediately useful for decision loss without another parameter search.
 
 ### Evidence table
@@ -214,8 +232,8 @@ or explicitly identify a numerical/aggregate result.
 | Equal five-patch hit distributions | n=6; default parameters at c=.1 and a second case c=.2; lower moments fixed within each pair | Certified endpoint signs reverse. Pair regret .00012115843 at c=.1 and .00007086475 at c=.2. | [Exact witnesses](../ideation/b_screen/n6_witness_check.json). Existence only. No general-n theorem, universal decay rate or ecological-frequency conclusion. |
 | Fixed-pairwise information at larger n | n=3..8, default parameters; only p,q fixed across each witness pair | Exact attained deterministic regret bounds exceed .08067 at n=5 and .09817 at n=6; lottery bounds exceed .05097 and .05202. | [Audit](../ideation/b_screen/n_scaling_audit.md), [rational receipt](../ideation/b_screen/n_scaling_audit.json). Class optima known only for n=3,4; neither increasing class regret through n=6 nor a class-wide saturation decline is proved. |
 | Local asymmetric shock laws | n=4, default parameters; original complete pairwise tables fixed | Explicit nonexchangeable shock-law pair retains opposite rankings and regret >.00709 via an exact coupling bound. | [Construction and proof](../ideation/b_screen/asymmetric_pairwise_witness.md). Small artificial perturbation; no new asymmetric kernel propagation, spatial calibration or general heterogeneous class bounds. |
-| Finite exchangeable laws beyond scalar mixtures | n=4,p=.1,e0=.02,e1=.9,c=.1,T=50; q=.03 or .06 | Symmetric witnesses give regret >.06433915 and >.05342336. At q=.06 the scalar class identifies R but the finite-exchangeable class does not. | [Independent labelled-kernel audit](../ideation/b_screen/labelled_class_audit.md), [exact receipt](../ideation/b_screen/labelled_class_audit.json). No larger-class extrema or identified classification of the other 14 cases. |
-| Kernel extension to finite exchangeability | n=4; original eight e0,e1,c combinations, both actions; arbitrary exchangeable hit laws | The existing moment coefficients reproduce all five fixed-count laws and hence their entire simplex, including both fixed-p,q polygons. | [Algebra and exact check](../ideation/b_screen/exchangeable_kernel_audit.md). R retains the distinguished buffered state. Seven edge polynomials qualify at the two reference cases; E interior extrema remain unproved. |
+| Finite exchangeable laws beyond scalar mixtures | n=4,p=.1,T=50; original 16 cases | 12 uniform C, two uniform R, two unidentified cases. At e0=.02,e1=.9,c=.1, sharp deterministic regrets are approximately .06433916 (q=.03), .05342337 (q=.06); lotteries give .04734540 and .03621839. | [Audit](../ideation/b_screen/exchangeable_certificate_audit.md), [exact certificate](../ideation/b_screen/exchangeable_certificate.json), [comparison table](class_identification_table.md). All attained/outer extrema coincide. Deterministic minimax choices are unchanged S to E. No full L-class certificates. |
+| Kernel extension to finite exchangeability | n=4; original eight e0,e1,c combinations, both actions; arbitrary exchangeable hit laws | The existing moment coefficients reproduce all five fixed-count laws and hence their entire simplex, including both fixed-p,q polygons. | [Algebra and exact check](../ideation/b_screen/exchangeable_kernel_audit.md). R retains the distinguished buffered state. The subsequent E certificates cover the polygon interiors at the original 16 cases. |
 | Scalar-class ecological pilot | n=4,p=.1,q=.03,e0=.02,T=50; eight new rational e1,c points | Four unidentified, three uniformly favouring C, one uniformly favouring R; vertical and boundary monotonicity support endpoint class extrema at these points. | [Audit](../ideation/b_screen/failure_region_audit.md). Point results do not establish area, connected components, unique transition curves or derivative signs throughout the ecological domain. |
 | Positive-area ecological-parameter witness | n=4,p=.1,q=.03,e0=.02,T=50; e1 in [.7995,.8005],c in [.1495,.1505] | Exact enclosures have opposite signs everywhere on a rectangle of coordinate area 1e-6. | [Audit and reproducible interval check](../ideation/b_screen/n4_rectangle_audit.md). Pair witness. The separate 907/1024 large-rectangle area report lacks saved leaves from that original run and is not needed for this conclusion. |
 | Fixed-e1 background-mortality intervals | n=4,p=.1,q=.03,T=50: (e1,c)=(.8,.15) or (.9,.45) | Reversal throughout e0 in [0,.03] or [.04,.14], respectively. At e0=.1 in the second setting, pair regret .07583193349. | [48 exact leaf certificates](../ideation/b_screen/n4_background_mortality.json), [interpretation](../ideation/b_screen/n4_background_mortality.md). Fixed e1 changes shock amplitude and buffering benefit as e0 changes. Pair reversal sets are not nested; no whole-class geometric conclusion. |
@@ -466,7 +484,9 @@ itself is an adequate description of any regional driver.
 D1's bounded pass, D2's family comparison and audited unimodal-class theorem,
 and D3's once-only lottery are complete. The patch-number witnesses have been
 audited, and the local asymmetric construction addresses one narrow D5
-objection. The audited finite-exchangeable witnesses sharpen the class question.
-Fable's next review is the [revised abstract](abstract.md), the class comparison,
-and the [bounded failure-region contract](failure_region_contract.md), which
-qualifies the necessary monotonicity before a full trace. D6 remains round 2.
+objection. The finite-exchangeable comparison now has certified class bounds
+for the original 16 cases. Fable's next review is the
+[Result 1 draft](results_identification.md), the [revised abstract](abstract.md),
+and the unchanged deterministic minimax choices alongside altered guarantees.
+Develop the mechanistic explanation before adding parameter grids. D6 remains
+round 2.

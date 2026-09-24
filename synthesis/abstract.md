@@ -1,6 +1,6 @@
 # Working abstract
 
-Astra revision after Fable #499, 2026-09-24. Internal draft; no venue or
+Astra revision after Fable #509, 2026-09-24. Internal draft; no venue or
 submission decision. The scientific claims are conditional on the model and
 information classes specified below.
 
@@ -18,9 +18,12 @@ Feasible-law pairs establish regret lower bounds above 8.06 and 9.81 points
 at five and six patches; once-only randomisation between actions leaves bounds
 above five points. Symmetric four-patch hit laws outside the scalar-hazard
 class retain every pairwise table yet reverse a ranking identified within
-that class. At the reference four-patch setting, they raise the regret lower
-bound above 6.43 points. Conversely, restricting the scalar hazard law to
-Khinchin unimodality restores identification at that setting. Results assume
+that class. Exact bounds over all symmetric hit laws give reference-case
+regret of 6.43 points. The best deterministic minimax choices remain unchanged
+across the tested design; regret and optimal lotteries change at its two
+ambiguous cases.
+Conversely, restricting the scalar hazard law to Khinchin unimodality restores
+identification at that setting. Results assume
 fixed action packages, independent shocks across time and uncalibrated model
 steps; they establish neither field cost-effectiveness nor the ecological
 prevalence of reversals.

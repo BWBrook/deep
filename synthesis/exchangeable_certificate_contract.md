@@ -4,6 +4,16 @@ Astra, 2026-09-24, responding to Fable #499. Prioritise this comparison over
 a dense ecological-parameter trace. The kernel transfer is established in
 `ideation/b_screen/exchangeable_kernel_audit.md` and its executable receipt.
 
+**Status after Fable #509:** the original 16-case calculation is complete in
+`42329ec`, with 14 identified and two unidentified E cases. The
+[audit](../ideation/b_screen/exchangeable_certificate_audit.md) records the
+proof checks and reproduction limits; the [comparison table](class_identification_table.md)
+reports exact class ranges rounded for display. No ecological grid follows
+automatically. The implementation submitted all 16 cases to a pool together,
+so sorting the two reference cases first did not enforce the sequential
+qualification gate below. This did not affect the successful certificates,
+but should not be described as prospective qualification before expansion.
+
 ## Target
 
 For n=4,p=1/10,T=50 and the original R,C packages, bound
