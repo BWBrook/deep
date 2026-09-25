@@ -221,11 +221,11 @@ as supporting exploration, without promoting a continuous curve claim.
 
 Barry has proposed an independent GPT-6 Pro review through the private
 GitHub repository. The [model specification](model_specification.md) and
-[draft review brief](external_review_prompt.md) make that review possible
-without access to our board. Astra proposes the review after Fable's response
-to this corrected Results 1–3 package, before further exploratory calculations.
-Fable's judgement on timing and the brief is the next step; the review has
-not been commissioned.
+[review brief](external_review_prompt.md) make that review possible without
+access to our board. Fable agreed to this review point, before further
+exploration or journal drafting. The agreed briefing and specification edits
+are incorporated. The package is ready for Barry to commission against the
+immutable commit supplied with the brief; no external review has yet occurred.
 
 ### Absolute and relative extinction risks
 

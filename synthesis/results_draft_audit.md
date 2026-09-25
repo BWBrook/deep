@@ -171,9 +171,29 @@ independent review.
 
 ## Review readiness
 
-The new [model specification](model_specification.md) gives a repository-only
-entry point to the process, information sets and decision criteria. The
-[external review prompt](external_review_prompt.md) proposes reviewing after
-Fable responds to these corrected drafts, before further exploratory
-calculations. Its timing and wording await that joint discussion. The review
-has not been commissioned and no external model has assessed this package.
+The [model specification](model_specification.md) gives a repository-only
+entry point to the process, information sets and decision criteria. Fable
+accepted these corrections and agreed that this Results 1–3 package is ready
+for the first independent GPT-6 Pro review, before further exploration or
+journal drafting. The specification now includes the shared within-step
+theta draw, the higher-moment feasibility conditions and a five-term evidence
+glossary. The [external review prompt](external_review_prompt.md) incorporates
+the agreed neutrality edits and lets the reviewer choose the subsequent
+reading order after the README and model specification.
+
+Fable's documentation-only commit `ee00417` added supersession notes to
+the original mechanism, boundary-sample and unimodality notes. This changed
+two inputs recorded in exact-audit receipts. To bind the receipts to the
+corrected notes, `mechanism_audit.py` and then `baseline_gain_edges_audit.py`
+were rerun. Both passed: 48 deterministic kernels and 12,288 entries for the
+four mechanism laws, followed by all 70 E and 44 S boundary records. Comparing
+the complete JSON objects before and after regeneration found changes only
+in `source_hashes_sha256` and `seconds_wall`. All scientific payloads are
+identical. The boundary receipt also records the regenerated mechanism
+receipt's hash. The unchanged numerical inputs leave the existing four-law
+figure unchanged; the unimodal receipt's seven source hashes still match.
+
+The complete package is to be committed and pushed before Barry receives
+the commissioning message. That message supplies the full immutable commit
+for use with the brief, avoiding a self-referential revision inside this file.
+No external model has yet assessed the package.

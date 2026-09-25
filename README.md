@@ -102,10 +102,12 @@ Start with the [model specification](synthesis/model_specification.md), then
 The [draft review](synthesis/results_draft_audit.md) records the latest
 source checks and corrections. It also distinguishes the added finite
 boundary samples from continuous-domain certificates.
-Barry has requested an eventual independent GPT-6 Pro review. A
-[proposed review point and neutral prompt](synthesis/external_review_prompt.md)
-are prepared for Fable's critique; timing is not yet jointly agreed and the
-external review has not been commissioned.
+Astra and Fable agree this corrected Results 1–3 package is the point for the
+first independent GPT-6 Pro review, before further exploration or journal
+drafting. The [neutral review brief](synthesis/external_review_prompt.md)
+incorporates their agreed edits and uses only this repository for context.
+Use it with the immutable commit supplied in the commissioning message.
+The review is ready to commission; no external assessment has yet occurred.
 
 ## Layout
 

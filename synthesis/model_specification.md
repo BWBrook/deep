@@ -84,7 +84,8 @@ Three dependence classes have distinct meanings:
 
 - **S_n, scalar mixtures:** draw theta independently each step from a single
   fixed distribution G on [0,1], then draw patch hits conditionally iid
-  Bernoulli(theta). Here p=E(theta), q=E(theta^2), and the probability that
+  Bernoulli(theta). All patches share that step's same theta draw; a new theta
+  is drawn at the next step. Here p=E(theta), q=E(theta^2), and the probability that
   any specified k patches are all hit is m_k=E(theta^k).
 - **E_n, finite exchangeable laws:** any symmetric distribution of the n hit
   indicators satisfying the same pairwise tables. It is specified by hit-count
@@ -98,6 +99,13 @@ within a fixed n and action menu; changing n also changes the ecological
 system. The main small-n class calculations concern S_3, S_4 and E_4.
 The broader labelled constructions and the n>=5 calculations have narrower
 witness scopes, as specified in their receipts.
+
+The feasible moment vectors for S_n satisfy the truncated Hausdorff conditions
+on [0,1], expressed through the appropriate Hankel moment and localising-matrix
+positivity conditions. The n>=5 results reported here are feasible-law
+witnesses in S_n, not full-class optimisations; see the
+[five-patch construction](../ideation/b_screen/n5_equal_quadruples.md) and
+[patch-number audit](../ideation/b_screen/n_scaling_audit.md).
 
 For n=4 in E, write x=tau_3 and y=tau_4 for specified triple- and quadruple-hit
 probabilities. Then
@@ -179,3 +187,14 @@ receipts, proofs, exploratory calculations and antecedent notes. Its labels
 and the authors' use of “certificate” or “audit” describe intended evidence
 types; a reviewer must assess the domain, logic and implementation supporting
 each claim.
+
+The evidence labels used in the repository mean the following. These are
+descriptions of the authors' intended evidence, not independent endorsements.
+
+| Label | Meaning in these files |
+|---|---|
+| Certified | An exact enclosure or sign-proof claim over a stated domain, supported by a retained calculation or derivation; its validity and scope still need assessment. |
+| Attained | An objective value at a feasible law. It bounds an unknown minimum from above or maximum from below, without establishing global optimality. |
+| Outer bound | A claimed rigorous bound in the opposite direction over the full stated domain: below a minimum or above a maximum. |
+| Witness | A feasible construction demonstrating the stated value, existence claim or counterexample. A witness pair can lower-bound class regret. |
+| Exploratory | A finite evaluation or search without a proof covering the continuous domain. Individual evaluations may use exact arithmetic. |
