@@ -102,12 +102,16 @@ Start with the [model specification](synthesis/model_specification.md), then
 The [draft review](synthesis/results_draft_audit.md) records the latest
 source checks and corrections. It also distinguishes the added finite
 boundary samples from continuous-domain certificates.
-Astra and Fable agree this corrected Results 1–3 package is the point for the
-first independent GPT-6 Pro review, before further exploration or journal
-drafting. The [neutral review brief](synthesis/external_review_prompt.md)
-incorporates their agreed edits and uses only this repository for context.
-Use it with the immutable commit supplied in the commissioning message.
-The review is ready to commission; no external assessment has yet occurred.
+The [independent GPT-6 Astra Pro review](ideation/DEEP_independent_review_6ec79d8.md)
+assessed commit `6ec79d8c1878d1afdd4044b21af0d8b8d8de2cc3` under the
+[agreed brief](synthesis/external_review_prompt.md). Its
+[code and verification records](ideation/reviews/6ec79d8/IMPORT.md) are preserved
+unchanged. The reviewer supports the central four-patch mathematics and
+recommends a focused ecological decision problem before broader claims.
+The [response and next-stage proposal](synthesis/external_review_response.md)
+separate subsequent local checks from the reviewer's evidence. The next joint
+task is to specify the decision contract, observable information and one
+recovery challenge; these ecological extensions have not been run.
 
 ## Layout
 

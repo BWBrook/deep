@@ -38,8 +38,46 @@ The last row is the design case that S certifies for R (V = 0 in S) and E does
 not. Between S and E the best deterministic choice under minimax regret is
 unchanged in every one of the 16 design cases; what changes is the guarantee,
 the loss scale (a factor 2.005 at the reference case) and the optimal lottery.
-This statement is specific to minimax regret; maximin persistence and
-prior-weighted criteria were not evaluated.
+This statement is specific to minimax regret. The subsequent comparison below
+evaluates maximin persistence at the two highlighted E settings only.
+Prior-weighted criteria have not been evaluated.
+
+## The decision criterion changes the reference choice
+
+The [independent review](../ideation/DEEP_independent_review_6ec79d8.md)
+added a comparison with maximising worst-case persistence. A
+[subsequent local audit](../ideation/b_screen/review_additions_audit.md)
+reconstructs the separate action minima over the whole E class using exact
+vertical and boundary bounds, with zero gaps between bounds and attained
+values. This calculation is separate from bounding Delta: a range of action
+differences alone does not determine either action's worst persistence.
+
+At n=4, p=.1, e0=.02, e1=.9, c=.1 and T=50:
+
+| q | inf P_R | inf P_C | Maximin persistence | Minimax regret |
+|---:|---:|---:|:---:|:---:|
+| .03 | .3857762490 | .3214370903 | R | C |
+| .06 | .2273638798 | .1149017905 | R | R |
+
+At q=.03, R gives the higher guaranteed persistence, whereas C minimises the
+largest avoidable persistence loss relative to the law-informed better action.
+The uncertainty class, ecological model and outcome are the same; the decision
+criterion differs. Neither criterion follows from p and q alone. This
+sensitivity must accompany any recommendation based on the regret values.
+It supplies no cost calibration or empirical support for the action menu.
+
+Both action minima are attained at the same law, tau_3=tau_4=q, within each
+of these two settings. This also determines the maximin result for a
+once-only lottery: for every probability alpha of choosing R,
+
+    inf_Q [alpha P_R(Q) + (1-alpha) P_C(Q)]
+      = alpha inf_Q P_R(Q) + (1-alpha) inf_Q P_C(Q).
+
+Every law gives at least the right-hand side, and the common minimising law
+attains it. Since inf P_R exceeds inf P_C, choosing R with probability one
+maximises this guarantee. Randomisation improves minimax regret here but
+does not improve maximin persistence. This deduction is specific to the
+verified common minimiser and the stated once-only policy class.
 
 ## The limit of hedging by lottery
 

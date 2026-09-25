@@ -1,0 +1,4 @@
+Scalar boundaries certified: 32
+Reference maximin q 3/100 R {'R': 0.3857762490371489, 'C': 0.3214370903460602}
+Reference maximin q 3/50 R {'R': 0.22736387976020683, 'C': 0.11490179053239946}
+All additional checks passed 8.29 seconds

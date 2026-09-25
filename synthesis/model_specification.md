@@ -16,16 +16,19 @@ change it. Optimisation ranges over a single fixed Q for each trajectory;
 Q cannot change with time, occupancy state, preceding events or the realised
 lottery draw.
 
-Let 0 <= e0 <= e1 <= 1 and s=e1-e0. Conditional on the hit vector, mortality
-events at occupied patches are independent. Under the baseline and action C,
-the mortality probability at occupied patch i is
+Each occupied patch represents a local population. The event called
+"mortality" in the code is local-population extirpation, not individual
+mortality. Let 0 <= e0 <= e1 <= 1 and s=e1-e0. Conditional on the hit vector,
+local extirpations are independent. Under the baseline and action C,
+the extirpation probability at occupied patch i is
 
     d_i(X_t) = e0 + s X_it.
 
-Under R, a single named patch (label 0) instead has mortality probability
+Under R, a single named patch (label 0) instead has extirpation probability
 e0 + (s/2) X_0t; all other patches retain the baseline rule. R thus halves
-the excess mortality caused by a hit at that patch. It does not halve
-background mortality or the patch's total mortality in a hit step.
+the excess extirpation probability caused by a hit at that patch. It does not
+halve background extirpation or the patch's total extirpation probability
+in a hit step.
 
 Let U be the surviving occupied set and m=|U|. Each patch outside U is
 recolonised independently with probability
@@ -37,11 +40,13 @@ The studied c values lie in [0,1/2]. Donors are the m survivors, so newly
 colonised patches do not become additional donors during the same step.
 Vacant patches include those emptied in that step as well as those empty
 before it. If m=0, recolonisation cannot begin: there is no external immigration
-and regional extinction is absorbing. A hit is an exposure, not a certain
-death. Patches may die on a step with no hits because e0 can be positive.
+and regional extinction is absorbing. A hit is an exposure that need not
+eliminate the local population. Local extirpation can also occur on a step
+with no hits because e0 can be positive.
 
 Both actions apply for the complete horizon. C doubles the per-source
-parameter c, not the complete recolonisation probability r_a(m). The two
+parameter c, not the complete recolonisation probability r_a(m).
+"Connectivity" refers here to this specified recolonisation change. The two
 packages have not been calibrated to equal cost or effort. Steps are not
 calibrated to years or to a particular field system.
 
@@ -139,7 +144,7 @@ The shape restriction in Result 3 is a subclass of S: G is Khinchin-unimodal
 if theta=m+UV with U uniform on [0,1], independent of V supported on
 [-m,1-m], for some mode m. This definition includes boundary modes and an
 atom at the mode. It is a restriction on a mixing distribution, not on
-mortality severity e1 or directly on the finite hit-count probabilities.
+local extirpation severity e1 or directly on the finite hit-count probabilities.
 
 ## Persistence, ranking and regret
 
@@ -171,6 +176,18 @@ optimum alpha=b/(b-a). The unknown law is fixed independently of the realised
 lottery draw. There is no switching, adaptation, spatial allocation search,
 or combined physical intervention in this policy class. The baseline P_0
 is used for explanatory contrasts and is not part of this optimised menu.
+
+An alternative decision rule is maximin persistence:
+
+    choose a to maximise inf_(Q in H) P_a(Q,T).
+
+This protects the absolute persistence guarantee. Minimax regret protects
+against the largest avoidable loss relative to the better prescribed action
+under the true law. Both use persistence as the outcome, but apply different
+decision criteria under ambiguity. The range of Delta alone does not determine
+the separate action minima required by maximin. Neither rule is selected by
+the pairwise information itself, and no preference between them is supplied
+by this model specification.
 
 ## Parameter and evidence scopes
 

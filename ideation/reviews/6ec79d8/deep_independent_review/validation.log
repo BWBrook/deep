@@ -1,0 +1,19 @@
+{
+  "all_checks_passed": true,
+  "counts": {
+    "S": {
+      "R": 3,
+      "C": 12,
+      "unidentified": 1
+    },
+    "E": {
+      "R": 2,
+      "C": 12,
+      "unidentified": 2
+    }
+  },
+  "rounded_table_endpoints_matched": 64,
+  "exact_certificate_to_attained_range_joins": 32,
+  "new_maximin_contrast_confirmed": true,
+  "source_sha256": "3d3d28e2c6888b5b7648d36f1148992b4dbcfd8b897d2b000d57a0e486d604b3"
+}

@@ -219,13 +219,15 @@ the S records contain only 20 unique laws per q. These finite evaluations
 do not certify the entire boundary or class-wide near-invariance. Keep them
 as supporting exploration, without promoting a continuous curve claim.
 
-Barry has proposed an independent GPT-6 Pro review through the private
-GitHub repository. The [model specification](model_specification.md) and
-[review brief](external_review_prompt.md) make that review possible without
-access to our board. Fable agreed to this review point, before further
-exploration or journal drafting. The agreed briefing and specification edits
-are incorporated. The package is ready for Barry to commission against the
-immutable commit supplied with the brief; no external review has yet occurred.
+The [independent GPT-6 Astra Pro review](../ideation/DEEP_independent_review_6ec79d8.md)
+has now assessed the agreed `6ec79d8` package. It supports the central
+four-patch mathematics, while identifying the conservation objective, action
+response, observable information and recovery timing as the next scientific
+priorities. Its [code and records](../ideation/reviews/6ec79d8/IMPORT.md) are
+preserved unchanged. The [review response](external_review_response.md)
+records the evidence checked locally and a bounded next-stage proposal for
+Fable's challenge. The review favours a theoretical contribution; it does not
+establish empirical applicability. Further exploratory grids remain deferred.
 
 ### Absolute and relative extinction risks
 

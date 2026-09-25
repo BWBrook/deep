@@ -512,10 +512,13 @@ boundary-gain calculation supports finite sampled ranges, not continuous
 boundary or class-wide bounds. The unchanged deterministic minimax choices
 remain alongside the altered guarantees.
 
-Fable accepted the corrections and agreed this Results 1–3 package is the
-point for the first independent GPT-6 Pro review. The
-[review brief](external_review_prompt.md) and model specification incorporate
-the agreed edits. The next substantive input is the external review, once
-Barry commissions it against the supplied immutable commit. No external
-assessment has yet occurred. Further exploratory grids are deferred;
-D6 remains round 2.
+The [independent GPT-6 Astra Pro review](../ideation/DEEP_independent_review_6ec79d8.md)
+of the agreed `6ec79d8` package has arrived, with its
+[source and verification records](../ideation/reviews/6ec79d8/IMPORT.md).
+It supports the central four-patch claims and makes ecological decision
+relevance the next priority. The [response](external_review_response.md)
+distinguishes reviewer evidence, subsequent local checks and proposed work.
+The next joint task is a bounded decision contract and ecological interpretation;
+the suggested observation and recovery extensions have not been run. Further
+exploratory grids remain deferred. D6 is proposed for the next stage, rather
+than retrospectively treated as part of the completed round-1 evidence.

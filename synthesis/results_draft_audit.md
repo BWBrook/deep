@@ -196,4 +196,7 @@ figure unchanged; the unimodal receipt's seven source hashes still match.
 The complete package is to be committed and pushed before Barry receives
 the commissioning message. That message supplies the full immutable commit
 for use with the brief, avoiding a self-referential revision inside this file.
-No external model has yet assessed the package.
+No external model had assessed the package at that commissioning point.
+The subsequent [GPT-6 Astra Pro review](../ideation/DEEP_independent_review_6ec79d8.md)
+and [response](external_review_response.md) are recorded separately; they do
+not change the historical scope of the source checks above.

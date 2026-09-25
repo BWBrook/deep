@@ -49,8 +49,10 @@ The best deterministic minimax action nevertheless remained unchanged between
 S and E in every design case. It was C at the reference case and R at the
 additional unidentified case. Loss of a uniform ranking therefore reduced the
 guarantee without changing the best deterministic decision under this loss
-criterion. This conclusion concerns minimax regret; maximin persistence and
-decisions averaged over a prior on hit laws were not evaluated. Once-only
+criterion. This conclusion concerns minimax regret. The subsequent
+[criterion comparison](results_decision_loss.md#the-decision-criterion-changes-the-reference-choice)
+evaluates maximin persistence at the two highlighted E settings; decisions
+averaged over a prior on hit laws remain unevaluated. Once-only
 randomisation responded to the larger uncertainty class:
 at q=.06 the optimal probability of selecting R fell from one in S to
 approximately .67795 in E, giving E-class regret of 3.62184 points. At the
