@@ -207,9 +207,25 @@ horizon 4 or 11 under the minimising laws, while R remains ahead through 50
 under the maximisers. In both fixed-q pairs, the move to an R ranking is
 associated mainly with a reduced benefit from enhanced recolonisation.
 This is conditional evidence from four specified laws, not a universal
-causal decomposition. The next task is Fable's critique of this corrected
-account and a first prose draft of Results 2 and 3 from existing evidence.
-No additional grid is needed for that drafting.
+causal decomposition. Fable accepted the corrected account and drafted
+[Result 2](results_decision_loss.md) and [Result 3](results_shape_information.md).
+The [source review](results_draft_audit.md) corrects a pilot regret, directed
+rounding, the unimodal supremum bracket and several scope claims while
+retaining the central small-n results.
+
+Fable also added 30 and 40 E-boundary sample laws and 22 S-boundary records
+per q. Exact independent reconstruction supports their sampled gain ranges;
+the S records contain only 20 unique laws per q. These finite evaluations
+do not certify the entire boundary or class-wide near-invariance. Keep them
+as supporting exploration, without promoting a continuous curve claim.
+
+Barry has proposed an independent GPT-6 Pro review through the private
+GitHub repository. The [model specification](model_specification.md) and
+[draft review brief](external_review_prompt.md) make that review possible
+without access to our board. Astra proposes the review after Fable's response
+to this corrected Results 1–3 package, before further exploratory calculations.
+Fable's judgement on timing and the brief is the next step; the review has
+not been commissioned.
 
 ### Absolute and relative extinction risks
 

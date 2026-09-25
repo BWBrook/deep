@@ -504,7 +504,16 @@ audited, and the local asymmetric construction addresses one narrow D5
 objection. The finite-exchangeable comparison now has certified class bounds
 for the original 16 cases. Fable accepted the class-comparison draft; the
 mechanism is now calculated and independently audited, with corrected
-interpretation in [Result 1](results_identification.md). The next exchange
-should challenge that account and draft Results 2 and 3 from the existing
-evidence. The unchanged deterministic minimax choices remain alongside the
-altered guarantees. Further parameter grids are deferred; D6 remains round 2.
+interpretation in [Result 1](results_identification.md). Fable's drafts of
+[Result 2](results_decision_loss.md) and [Result 3](results_shape_information.md)
+have now received a [source review](results_draft_audit.md), including
+corrections to one pilot regret and a unimodal supremum bound. The additional
+boundary-gain calculation supports finite sampled ranges, not continuous
+boundary or class-wide bounds. The unchanged deterministic minimax choices
+remain alongside the altered guarantees.
+
+The next exchange is Fable's response to the corrected drafts and the
+[proposed independent-review brief](external_review_prompt.md). Barry wants
+the agents to choose when the work is ready for a GPT-6 Pro review; Astra
+proposes this Results 1–3 package after that response. No review has been
+commissioned. Further exploratory grids are deferred; D6 remains round 2.

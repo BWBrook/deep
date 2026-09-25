@@ -1,6 +1,6 @@
 # Result 2 draft: decision consequence and its limits
 
-Fable, 2026-09-25. Internal manuscript text for Astra's review. Companion to
+Fable, 2026-09-25; corrected in Astra's same-day source review. Companion to
 [Result 1](results_identification.md). Sources: [D3 lottery audit](d3_lottery_audit.md),
 [patch-number audit](../ideation/b_screen/n_scaling_audit.md),
 [class table](class_identification_table.md), [E certificate audit](../ideation/b_screen/exchangeable_certificate_audit.md),
@@ -13,8 +13,9 @@ rationals in those records; decimals below are rounded displays.
 ## Loss criterion
 
 A manager who must choose once between the prescribed packages R and C, and who
-knows only what the pairwise hit tables fix, faces a set of compatible laws. Let
-a and b be the smallest and largest values of Delta = P_R - P_C over that set.
+knows the pairwise hit tables and adopts a specified dependence class, faces
+a set of compatible laws. Let a and b be the smallest and largest values of
+Delta = P_R - P_C over that set.
 Choosing R loses at most max(0, -a); choosing C loses at most max(0, b). The
 deterministic minimax regret is V = min(max(0, -a), max(0, b)), the worst-case
 loss of persistence probability at the horizon for the better of the two
@@ -42,8 +43,10 @@ prior-weighted criteria were not evaluated.
 
 ## The limit of hedging by lottery
 
-Drawing R with probability alpha once, before the shock sequence, has worst
-regret max((1 - alpha) b, -alpha a). The optimum alpha* = b/(b - a) gives
+When a < 0 < b, drawing R with probability alpha once, before the shock
+sequence, has worst regret max((1 - alpha) b, -alpha a). The unknown hit law
+is fixed independently of the realised draw, and the criterion averages
+over that draw. The optimum alpha* = b/(b - a) gives
 V_mix = -ab/(b - a). With -a and b both positive, V_mix / V = max(-a, b)/(b - a),
 which lies in [1/2, 1) for every such problem. A once-only lottery over two
 complete packages can therefore halve the worst-case loss at best, and does so
@@ -61,12 +64,15 @@ in S, exact evaluation of saved feasible-law pairs gives regret lower bounds
 |---:|---:|---:|
 | 5 | 8.067 | 5.097 |
 | 6 | 9.817 | 5.202 |
-| 7 | 5.551 | 3.799 |
-| 8 | 3.189 | 2.522 |
+| 7 | 5.550 | 3.798 |
+| 8 | 3.188 | 2.521 |
 
-The n = 5 and n = 6 bounds each exceed the exact n = 3 and n = 4 class values,
-so the loss at five and six patches is larger than at three or four. The bounds
-do not order the unknown n = 5 and n = 6 optima, do not establish a peak, and
+Within S, the n = 5 and n = 6 bounds each exceed the exact n = 3 and n = 4
+class values, so the loss at five and six patches is larger than at three or
+four. These witnesses also belong to the corresponding finite-exchangeable
+class E_n, so the displayed regret lower bounds carry over to E_n for the
+same fixed-patch R/C menu. No whole-class E_n optimum at n >= 5 is calculated.
+The bounds do not order the unknown n = 5 and n = 6 optima, do not establish a peak, and
 do not isolate the number of free moments as the cause, because n also changes
 habitat amount, the fraction buffered and the number of colonisation sources.
 As a companion scale, at the n = 6 endpoint law Glo the worse action's
@@ -79,7 +85,7 @@ quantities.
 Within S at n = 4, p = .1, q = .03, e0 = .02, T = 50, exact point certificates
 locate unidentified rankings at (e1, c) = (.5, .22), (.7, .15), (.85, .02),
 (.5, .40) and the reference (.9, .10), with class regrets .529, 1.794, .117,
-2.427 and 3.209 pp, while (.5, .18), (.7, .10) and (.9, .06) are identified for
+.382 and 3.209 pp, while (.5, .18), (.7, .10) and (.9, .06) are identified for
 C and (.95, .45) for R. These are point classifications; they force a
 transition between neighbouring identified and unidentified points but do not
 certify a boundary, an area or a fraction of the plane. For the two endpoint
@@ -88,13 +94,16 @@ laws, opposite rankings are certified on a positive-area rectangle of
 (.9, .45), and along constant-amplitude background-mortality paths. Endpoint-pair
 reversals lower-bound class ambiguity; their sets are not nested in e0.
 
-The loss depends on the horizon. Because extinction is absorbing and every
-nonempty state has extinction probability at least e0^n per step,
-P_action(T) <= (1 - e0^n)^T, so persistence, Delta and the class regret all tend
-to zero as T grows. At one witness pair the regret falls from 7.456 pp at
-T = 20 to .003 pp at T = 200 with the signs unchanged; at another parameter
-point the ranking itself reverses between T = 20 and T = 50. Stable sign counts
-across horizons therefore do not imply stable benefits.
+The loss depends on the horizon. For e0 > 0 and e1 >= e0, extinction is
+absorbing and every nonempty state has extinction probability at least e0^n
+per step. Thus P_action(T) <= (1 - e0^n)^T, so persistence, Delta and the class regret all tend
+to zero as T grows. This bound proves a limit, not a useful convergence rate
+at small e0; it does not give extinction at e0 = 0. At the witness pair with
+p=.3, q=41/300, e0=.02, e1=.9 and c=.3, regret falls from 7.456 pp at
+T = 20 to .00257 pp at T = 200 with the signs unchanged. At p=.3, q=41/300,
+e0=.02, e1=.8 and c=.15, Ghi changes from favouring R at T=20 to favouring C
+at T=50, while Glo favours C at both. Stable sign counts across horizons
+therefore do not imply stable benefits.
 
 ## What Result 2 does not claim
 

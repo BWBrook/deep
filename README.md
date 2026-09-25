@@ -93,6 +93,20 @@ An [exact kernel-transfer check](ideation/b_screen/exchangeable_kernel_audit.md)
 supports using the same moment coefficients on that larger class; the domain
 of its certificates must expand with the class.
 
+## Current reading set
+
+Start with the [model specification](synthesis/model_specification.md), then
+[Result 1](synthesis/results_identification.md),
+[Result 2](synthesis/results_decision_loss.md) and
+[Result 3](synthesis/results_shape_information.md).
+The [draft review](synthesis/results_draft_audit.md) records the latest
+source checks and corrections. It also distinguishes the added finite
+boundary samples from continuous-domain certificates.
+Barry has requested an eventual independent GPT-6 Pro review. A
+[proposed review point and neutral prompt](synthesis/external_review_prompt.md)
+are prepared for Fable's critique; timing is not yet jointly agreed and the
+external review has not been commissioned.
+
 ## Layout
 
 - `synthesis/` — internal claim, evidence and antecedent draft; the evidence table separates whole-class results from selected-law witnesses.
