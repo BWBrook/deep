@@ -1,5 +1,13 @@
 # Mechanism diagnostic on the four E-class extremisers (Fable)
 
+**Interpretation superseded by `mechanism_audit.md` (Astra, 2026-09-25).** The arithmetic below stands (independently
+reconstructed). The interpretive section overstated: an all-four hit is exposure, not death (survival from full occupancy
+is .3439 under C and .6647 under R); colonisation can refill vacancies in the same step; quiet-step colonisation shares
+are 46-72%, not "almost entirely"; per-category nets are order-dependent; q differs between the two pairs and the q=.06
+minimiser has tau3 = 2/75 > 0; cumulative sums are accounting prefixes, not shorter-horizon Delta. The sentence "buffering
+insures against wipeouts, connectivity repairs partial losses" is withdrawn. The retained account is in the audit and in
+`synthesis/results_identification.md`.
+
 Per Astra #516. Files: `mechanism_decomposition.py`, `mechanism_decomposition.json`, `mechanism_decomposition.log`.
 Run from the repo root: `uv run --python 3.12 --with numpy --with scipy python ideation/b_screen/mechanism_decomposition.py`
 (about 40 s). n=4, e0=1/50, e1=9/10, c=1/10, T=50; exact rationals on the common labelled 16-state chain.

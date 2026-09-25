@@ -1,4 +1,8 @@
-# Complete-action gains along the whole E boundary (Fable)
+# Complete-action gains at sampled points of the E boundary (Fable)
+
+**Superseded in part by `baseline_gain_edges_audit.py` (Astra, 2026-09-25):** the values below are exact at the 70 E and 44 S sampled
+boundary points (30 and 40 unique E laws; 20 unique S laws per q) and establish nothing about unsampled boundary points,
+the interior, monotonicity, or a class-wide tolerance. Wording such as "along the entire boundary" is withdrawn.
 
 Files: `baseline_gain_edges.py`, `baseline_gain_edges.json`, `baseline_gain_edges.log`. Exact evaluation of
 P_R - P_0 and P_C - P_0 at every polygon vertex and nine interior points of every edge of E, and at 22 points of the
@@ -12,9 +16,9 @@ account (#529) holds beyond the four extremisers.
 | .06 | E polygon (40 points) | [.1366, .1443] | [.0242, .1967] | [.0907, .1940] |
 | .06 | S lens (22 points) | [.1374, .1438] | [.0269, .1128] | |
 
-Along the entire E boundary, buffering's gain above baseline moves by at most .014 (q = .03) and .008 (q = .06),
+At the sampled E-boundary points, buffering's gain above baseline moves by at most .014 (q = .03) and .008 (q = .06),
 while connectivity's gain moves by .230 and .173. The baseline itself falls with co-hit concentration (.358 to .230;
 .194 to .091). So Delta = (P_R - P_0) - (P_C - P_0) is, to within about .01, a constant minus connectivity's gain:
-the ranking is decided by how far connectivity's benefit collapses as co-hits concentrate, and buffering's benefit is
-nearly invariant to the higher-order structure at fixed (p, q). Boundary points only; the interior is not evaluated,
-and only this one ecological setting.
+on these samples the ranking is decided by how far connectivity's benefit falls as co-hits concentrate, while buffering's
+benefit varies little. Descriptive, finite sample, one ecological setting; the residual of the best constant-minus-
+colonisation fit is exactly half the buffering span by the gain identity, which adds no explanation.

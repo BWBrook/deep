@@ -45,11 +45,13 @@ iff a >= A. This gives an exact rational function of the mode:
   (1030792151040000 m + 824633720832000); Sturm root count of numerator and denominator on [0, 11/80] is 0 for both,
   both positive at the midpoint. So m3(G) < x* for **every** unimodal G, hence **Delta(G) < 0: C is strictly preferred
   for every unimodal hazard law.** The ranking is identified within the unimodal class.
-- Rigorous margin: Delta(G) <= Delta(79/4000, U(79/4000)) = **-0.00427** for every unimodal G (79/4000 = 0.01975 lies
+- Rigorous margin: Delta(G) <= Delta(79/4000, U(79/4000)) = -0.0042727... < **-0.00427** for every unimodal G (79/4000 = 0.01975 lies
   between sup m3_uni and x*; Delta increases in m4 and along the upper curve). Exploratory float search over
   (mode, y3) with y4 at its Hausdorff maximum found the largest unimodal Delta at about -0.0160 (m ~ 0.066, at the
-  m3-maximising law). So the true unimodal supremum of Delta lies in [-0.0160, -0.0043]; the full-class supremum is
-  +0.0321.
+  m3-maximising law). So the true unimodal supremum of Delta satisfies -0.016 < sup < -0.00427 (the rational witness at mode 33/500 gives
+  Delta = -0.0159654884... > -0.016 exactly; the certified envelope value F(79/4000) = -0.0042727063... < -0.00427);
+  the full-class supremum is +0.0321. (Bracket corrected 2026-09-25 after Astra's rounding audit; an earlier display
+  rounded both ends inward.)
 - The m3-maximising unimodal law is 0.9272 * Uniform[0.0660, 0.0661] + 0.0728 * Uniform[0.0660, 1]: essentially an
   atom at the mode plus a flat tail to 1. Direct exact evaluation: Delta = -0.015965 (P_R 0.42796, P_C 0.44392).
 - Unimodal m3 range is [0.010125, 0.019740] versus the full-class [0.009, 0.024556]; the ambiguity band
