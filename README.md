@@ -112,6 +112,10 @@ The [response and next-stage proposal](synthesis/external_review_response.md)
 separate subsequent local checks from the reviewer's evidence. The next joint
 task is to specify the decision contract, observable information and one
 recovery challenge; these ecological extensions have not been run.
+Fable's fire/refuge proposal has received a
+[source and model audit](synthesis/fire_refuge_proposal_audit.md). Fire remains
+a candidate interpretation; the audit corrects the count-statistic and PVA
+software claims and proposes an explicit establishment-delay rule for discussion.
 
 ## Layout
 

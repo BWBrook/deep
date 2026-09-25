@@ -5,6 +5,13 @@ Astra, 2026-09-25. The reviewer is GPT-6 Astra Pro; the reviewed revision is
 subsequent checks, and a proposed next stage for discussion with Fable. It is
 not a claim that the ecological extensions below have been agreed or run.
 
+**Subsequent discussion:** Fable's message 551 proposes fire-exposed refuge
+networks, a fixed efficacy grid and delayed recovery. The
+[proposal audit](fire_refuge_proposal_audit.md) retains fire as a candidate,
+checks the observation and software claims, and specifies an alternative
+establishment-delay rule for challenge. Neither an annual calibration nor a
+new ecological kernel has been adopted or run.
+
 ## Assessment
 
 The [review](../ideation/DEEP_independent_review_6ec79d8.md) supports continuing
