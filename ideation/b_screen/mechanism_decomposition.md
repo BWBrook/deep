@@ -33,7 +33,7 @@ baseline; "colonisation gain" the same with K_C - K_0; Delta = buffering - colon
 2. **Bulk versus dispersed co-hits.** All four laws share p and q, hence the same expected number of co-hit pairs per
    step, E[K(K-1)]/2 = 6q. The minimisers deliver those pairs dispersed over frequent partial-loss steps (k=2 or 3),
    which leave survivors and empties for colonisation to repair; the maximisers deliver them in rare all-four steps
-   (pi_4 = q/2... exactly pi_4 = 0.03 and 0.06 here) that leave nothing to repair. With all four hit, the region
+   (pi_4 = tau4 = q: 0.03 and 0.06 here) that leave nothing to repair. With all four hit, the region
    survives the step with probability 1 - 0.9^4 = 0.344 unbuffered and 1 - 0.9^3 x 0.46 = 0.665 buffered; that single
    contrast is the k=4 buffering entry (+0.145, +0.145) and it is the whole R advantage.
 3. **The occupancy trajectories confirm it.** Under the q=.03 minimiser, C keeps the region fuller at every time
