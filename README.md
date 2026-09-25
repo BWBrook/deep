@@ -116,6 +116,11 @@ Fable's fire/refuge proposal has received a
 [source and model audit](synthesis/fire_refuge_proposal_audit.md). Fire remains
 a candidate interpretation; the audit corrects the count-statistic and PVA
 software claims and proposes an explicit establishment-delay rule for discussion.
+The [delayed-recovery contract](synthesis/delayed_recovery_contract.md) now fixes
+two donor variants and a bounded implementation pilot. A small
+[observation check](ideation/b_screen/observation_claim_audit.md) rejects the
+inference that a weak all-hit frequency bound establishes decision
+unobservability; learning over the full uncertain class remains open.
 
 ## Layout
 

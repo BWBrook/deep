@@ -1,0 +1,117 @@
+{
+  "scope": "Two known-law pairs; original immediate-recovery kernel only",
+  "assumptions": [
+    "fixed true law belongs to the declared two-law set",
+    "iid, perfectly observed training intervals",
+    "training record independent of future ecological draws",
+    "original fully occupied initial state at the decision",
+    "no waiting cost or nuisance-parameter estimation"
+  ],
+  "rule": "Choose C if any training interval has K=2; otherwise choose R",
+  "loss": "Expected 50-step persistence regret over training records, at each true law",
+  "method": "Exact rational arithmetic using previously certified action differences",
+  "zero_all_hit_95_upper": {
+    "50": 0.058155079116972264,
+    "99": 0.02980667377335089,
+    "100": 0.029513049607039932
+  },
+  "first_zero_event_upper_below_003_exact": 99,
+  "cases": [
+    {
+      "name": "Original E extremisers",
+      "intervals": 15,
+      "pi_A": [
+        "39/50",
+        "1/25",
+        "9/50",
+        "0",
+        "0"
+      ],
+      "pi_B": [
+        "69/100",
+        "7/25",
+        "0",
+        "0",
+        "3/100"
+      ],
+      "all_count_categories_positive": false,
+      "error_A": {
+        "lower": "25478730792821/500000000000000",
+        "upper": "50957461585643/1000000000000000",
+        "display": 0.05095746158564272
+      },
+      "error_B": {
+        "lower": "0",
+        "upper": "0",
+        "display": 0.0
+      },
+      "expected_regret_A": {
+        "lower": "9134221581341/1000000000000000",
+        "upper": "4567110790671/500000000000000",
+        "display": 0.009134221581341894
+      },
+      "expected_regret_B": {
+        "lower": "0",
+        "upper": "0",
+        "display": 0.0
+      },
+      "worst_expected_regret": {
+        "lower": "9134221581341/1000000000000000",
+        "upper": "4567110790671/500000000000000",
+        "display": 0.009134221581341894
+      },
+      "exact_worst_regret_below_one_percentage_point": true
+    },
+    {
+      "name": "90:10 extremiser/Glo mixtures",
+      "intervals": 20,
+      "pi_A": [
+        "77667/100000",
+        "1243/25000",
+        "8541/50000",
+        "63/25000",
+        "27/100000"
+      ],
+      "pi_B": [
+        "69567/100000",
+        "6643/25000",
+        "441/50000",
+        "63/25000",
+        "2727/100000"
+      ],
+      "all_count_categories_positive": true,
+      "error_A": {
+        "lower": "23603497780477/1000000000000000",
+        "upper": "11801748890239/500000000000000",
+        "display": 0.023603497780477933
+      },
+      "error_B": {
+        "lower": "81186560174351/500000000000000",
+        "upper": "162373120348703/1000000000000000",
+        "display": 0.1623731203487027
+      },
+      "expected_regret_A": {
+        "lower": "4082689151213/1000000000000000",
+        "upper": "2041344575607/500000000000000",
+        "display": 0.004082689151213097
+      },
+      "expected_regret_B": {
+        "lower": "8267667362597/1000000000000000",
+        "upper": "4133833681299/500000000000000",
+        "display": 0.008267667362597795
+      },
+      "worst_expected_regret": {
+        "lower": "8267667362597/1000000000000000",
+        "upper": "4133833681299/500000000000000",
+        "display": 0.008267667362597795
+      },
+      "exact_worst_regret_below_one_percentage_point": true
+    }
+  ],
+  "limitation": "No optimality claim, whole-E learning bound, field sample requirement or delayed-model result",
+  "source_sha256": {
+    "mechanism_audit.json": "1003989c25b47197309dab0165812530c72150f62ec19bedb26bd3933a4291a2",
+    "review_additions_audit.json": "7b90159a8f924ac9f12409816b86741b46b45b13facac460bdd76d1eacfdd342",
+    "observation_claim_audit.py": "7f0e455cea54ed2dec1c3f56de1531b9366ba6178fde566b8daa82bb5cad85d6"
+  }
+}

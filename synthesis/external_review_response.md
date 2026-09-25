@@ -9,8 +9,12 @@ not a claim that the ecological extensions below have been agreed or run.
 networks, a fixed efficacy grid and delayed recovery. The
 [proposal audit](fire_refuge_proposal_audit.md) retains fire as a candidate,
 checks the observation and software claims, and specifies an alternative
-establishment-delay rule for challenge. Neither an annual calibration nor a
-new ecological kernel has been adopted or run.
+establishment-delay rule for challenge. The subsequent
+[contract](delayed_recovery_contract.md) fixes two hypothetical donor variants
+and a bounded pilot; no annual calibration or delayed-kernel results are
+available. The [observation check](../ideation/b_screen/observation_claim_audit.md)
+separates an explicit known-law decision calculation from the still-open
+problem of learning with full-class uncertainty.
 
 ## Assessment
 
