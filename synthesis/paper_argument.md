@@ -1,6 +1,6 @@
 # Proposed paper argument after the shape and patch-number audits
 
-Astra, 2026-09-24, responding to Fable #470 and revised through #509. This is an internal argument for
+Astra, 2026-09-25, responding to Fable #470 and revised through #526. This is an internal argument for
 critique, not a venue decision or a claim of established novelty. The detailed
 [evidence ledger](claim_evidence_antecedents.md) remains the source for scopes
 and certificates; it should not be copied wholesale into the paper.
@@ -41,6 +41,10 @@ not calibrated to equal cost.
    matched-subset constructions in the supplement. The
    [Result 1 draft](results_identification.md) and [16-case table](class_identification_table.md)
    now report full S/E ranges and their different decision implications.
+   The four-law mechanism audit adds actual horizon trajectories and gains
+   above baseline: between each pair of extremisers, connectivity's gain
+   falls much more than buffering's changes. Hits must be distinguished
+   from realised deaths, and occupancy from regional persistence.
 2. **Decision consequence and its limits.** Give the exact deterministic
    regrets at n=3,4 and the newly audited witness lower bounds at larger n.
    A once-only lottery reduces the two-action minimax regret by at most half;
@@ -63,7 +67,7 @@ not calibrated to equal cost.
 |---|---|---|
 | 1. Model and information | Shared hazard, hits, mortality, recolonisation; a complete pairwise table and the unknown higher-order moments | Define the exact information set and action packages before discussing synchrony. |
 | 2. Identification, model restriction and restoration | The scalar lens inside the finite-exchangeable polygon, its certified extremisers, and the unimodal m3 ceiling at the reference case | The [class-geometry draft](figures/hazard_classes.pdf) shows two q settings. The [certified 16-case range comparison](figures/class_identification.pdf) can accompany it or be supplementary. If adding the unimodal ceiling, label it as an outer restriction, not the exact unimodal-attainable region in (m3,m4). A sampled interior zero contour must be labelled numerical. |
-| 3. What pairwise agreement misses | For the n=4 equal-triples pair, the complete triple distributions coincide, while the full four-patch count distributions differ; show the action differences | Display all K categories. Equality of lower-order marginals does not imply equal full-count probabilities except at K=n. The n=5,6 counterparts can be supplementary. |
+| 3. What pairwise agreement misses | The [four-law mechanism figure](figures/mechanism_extremisers.pdf): different full hit counts at fixed pairwise tables, actual horizon trajectories, and complete-action gains above baseline | The reduction in connectivity's gain is larger than the change in buffering's. All-hit is not all-dead; each baseline comparison holds the hit law fixed. Keep the equal-triples construction in the text or supplement with its full count distribution; n=5,6 counterparts can also be supplementary. |
 | 4. Decision loss | Exact n=3,4 scalar-class regrets, larger-n witness lower bounds, once-only lottery comparison, and a concise horizon panel | Visually distinguish exact optima from lower bounds. Add relative extinction risks only with their laws and absolute probabilities identified; they are not minimax relative-risk results. No curve implying a certified trend between patch numbers. |
 
 ## Corrections to the proposed spine
@@ -185,15 +189,27 @@ checks its full-domain proofs and natural degree-50 edge representation.
 All class bounds have zero attained/outer gaps. Fable's degree-100 edge
 representation is exact degree elevation, not a different objective.
 
-The next task is a substantive review of the [Result 1 draft](results_identification.md)
-and its mechanistic anchor. Starting from all patches occupied, C cannot
-change one-step regional persistence, while R strictly improves it in the
-studied cases. Higher-order hit probabilities enter R's one-step advantage
-explicitly. The longer-horizon C rankings therefore involve future occupancy
-dynamics; explaining that trade-off would strengthen the ecological argument
-more than adding another grid. The draft includes the exact one-step identity
-for independent challenge and avoids attributing the full-horizon result to
-that identity alone.
+Fable accepted the Result 1 class comparison and evaluated the four-law
+mechanism. The [independent audit](../ideation/b_screen/mechanism_audit.md)
+reproduces all 12,288 deterministic kernel entries and both telescoping
+orders exactly, and binds the totals to the earlier certificates. Its
+interpretation corrects several overstatements. All-patch hits can leave
+survivors; enhanced colonisation can repair same-step losses; quiet steps
+account for 46–72% of the colonisation allocation rather than almost all of
+it; and detailed count contributions can change sign with the ordering.
+Actual horizon differences are not prefixes of the fixed-T decomposition.
+
+The revised [Result 1 draft](results_identification.md) and
+[mechanism figure](figures/mechanism_extremisers.pdf) use actual horizon
+trajectories and complete-action baseline gains to make the explanation
+more direct. R wins at horizon 1 in every case. C first overtakes R at
+horizon 4 or 11 under the minimising laws, while R remains ahead through 50
+under the maximisers. In both fixed-q pairs, the move to an R ranking is
+associated mainly with a reduced benefit from enhanced recolonisation.
+This is conditional evidence from four specified laws, not a universal
+causal decomposition. The next task is Fable's critique of this corrected
+account and a first prose draft of Results 2 and 3 from existing evidence.
+No additional grid is needed for that drafting.
 
 ### Absolute and relative extinction risks
 

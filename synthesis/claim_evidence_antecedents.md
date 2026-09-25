@@ -11,6 +11,9 @@ distinguish the scalar-hazard class from arbitrary symmetric shock laws.
 The 2026-09-24 finite-exchangeable certificates extend the comparison to
 whole-class extrema at the original 16 cases; the accompanying audit records
 which calculations were independently reproduced.
+The 2026-09-25 mechanism audit reproduces the four E extremisers' exact
+decompositions and separates those hybrid allocations from actual horizon
+trajectories and complete-action gains above baseline.
 This is an internal synthesis, not an agreed manuscript or an established
 novelty claim. The proposed division is recorded in thread 49, #450–452.
 
@@ -138,6 +141,19 @@ uniform ranking, a robust decision rule, and its performance guarantee.
 Choosing which patch to buffer cannot improve the E-class results because
 all buffering sites are equivalent under every symmetric law. E-identified
 cases remain unresolved in L; no L-class optimum is claimed.
+These decisions concern minimax regret; maximin persistence and prior-weighted
+criteria were not evaluated.
+
+The [four-law mechanism audit](../ideation/b_screen/mechanism_audit.md)
+verifies the mortality/recolonisation account at the four E extremisers.
+Buffering wins at horizon 1 in each; connectivity first overtakes it at
+horizon 4 or 11 under the minimisers. From minimiser to maximiser at fixed q,
+connectivity's 50-step gain above the unmodified baseline falls markedly,
+while buffering's changes much less. Both exact telescoping orders agree
+with this broad accounting pattern, but their detailed count allocations
+differ. An all-patch hit need not cause extinction, and greater probability
+of full occupancy need not imply greater persistence. These are fixed-law
+diagnostics, not new class bounds or a unique causal mediation result.
 
 ### A manuscript claim
 
@@ -233,6 +249,7 @@ or explicitly identify a numerical/aggregate result.
 | Fixed-pairwise information at larger n | n=3..8, default parameters; only p,q fixed across each witness pair | Exact attained deterministic regret bounds exceed .08067 at n=5 and .09817 at n=6; lottery bounds exceed .05097 and .05202. | [Audit](../ideation/b_screen/n_scaling_audit.md), [rational receipt](../ideation/b_screen/n_scaling_audit.json). Class optima known only for n=3,4; neither increasing class regret through n=6 nor a class-wide saturation decline is proved. |
 | Local asymmetric shock laws | n=4, default parameters; original complete pairwise tables fixed | Explicit nonexchangeable shock-law pair retains opposite rankings and regret >.00709 via an exact coupling bound. | [Construction and proof](../ideation/b_screen/asymmetric_pairwise_witness.md). Small artificial perturbation; no new asymmetric kernel propagation, spatial calibration or general heterogeneous class bounds. |
 | Finite exchangeable laws beyond scalar mixtures | n=4,p=.1,T=50; original 16 cases | 12 uniform C, two uniform R, two unidentified cases. At e0=.02,e1=.9,c=.1, sharp deterministic regrets are approximately .06433916 (q=.03), .05342337 (q=.06); lotteries give .04734540 and .03621839. | [Audit](../ideation/b_screen/exchangeable_certificate_audit.md), [exact certificate](../ideation/b_screen/exchangeable_certificate.json), [comparison table](class_identification_table.md). All attained/outer extrema coincide. Deterministic minimax choices are unchanged S to E. No full L-class certificates. |
+| Mechanism at four E extremisers | n=4,p=.1,e0=.02,e1=.9,c=.1; q=.03 or .06; each fixed law evaluated through t=50 | Exact horizon crossings to C at t=4 and 11 under the minimisers; R wins throughout t=1..50 under the maximisers. Between each fixed-q pair, C's gain above baseline declines much more than R's changes. | [Independent audit](../ideation/b_screen/mechanism_audit.md), [figure](figures/mechanism_extremisers.pdf). All 48 deterministic kernels and both hybrid allocations reproduced exactly; allocations are order-dependent and distinct from actual horizon differences or complete-action gains. No new law or grid. |
 | Kernel extension to finite exchangeability | n=4; original eight e0,e1,c combinations, both actions; arbitrary exchangeable hit laws | The existing moment coefficients reproduce all five fixed-count laws and hence their entire simplex, including both fixed-p,q polygons. | [Algebra and exact check](../ideation/b_screen/exchangeable_kernel_audit.md). R retains the distinguished buffered state. The subsequent E certificates cover the polygon interiors at the original 16 cases. |
 | Scalar-class ecological pilot | n=4,p=.1,q=.03,e0=.02,T=50; eight new rational e1,c points | Four unidentified, three uniformly favouring C, one uniformly favouring R; vertical and boundary monotonicity support endpoint class extrema at these points. | [Audit](../ideation/b_screen/failure_region_audit.md). Point results do not establish area, connected components, unique transition curves or derivative signs throughout the ecological domain. |
 | Positive-area ecological-parameter witness | n=4,p=.1,q=.03,e0=.02,T=50; e1 in [.7995,.8005],c in [.1495,.1505] | Exact enclosures have opposite signs everywhere on a rectangle of coordinate area 1e-6. | [Audit and reproducible interval check](../ideation/b_screen/n4_rectangle_audit.md). Pair witness. The separate 907/1024 large-rectangle area report lacks saved leaves from that original run and is not needed for this conclusion. |
@@ -485,8 +502,9 @@ D1's bounded pass, D2's family comparison and audited unimodal-class theorem,
 and D3's once-only lottery are complete. The patch-number witnesses have been
 audited, and the local asymmetric construction addresses one narrow D5
 objection. The finite-exchangeable comparison now has certified class bounds
-for the original 16 cases. Fable's next review is the
-[Result 1 draft](results_identification.md), the [revised abstract](abstract.md),
-and the unchanged deterministic minimax choices alongside altered guarantees.
-Develop the mechanistic explanation before adding parameter grids. D6 remains
-round 2.
+for the original 16 cases. Fable accepted the class-comparison draft; the
+mechanism is now calculated and independently audited, with corrected
+interpretation in [Result 1](results_identification.md). The next exchange
+should challenge that account and draft Results 2 and 3 from the existing
+evidence. The unchanged deterministic minimax choices remain alongside the
+altered guarantees. Further parameter grids are deferred; D6 remains round 2.

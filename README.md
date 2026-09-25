@@ -80,8 +80,15 @@ The [failure-region pilot audit](ideation/b_screen/failure_region_audit.md)
 checks eight new scalar-class points: four unidentified, three favouring C,
 and one favouring R. These points do not establish area or connected
 components. The [finite-exchangeable class comparison](synthesis/exchangeable_certificate_contract.md)
-is now complete, with the [Result 1 draft](synthesis/results_identification.md)
-ready for substantive review.
+is now complete. The [Result 1 draft](synthesis/results_identification.md)
+includes an [independent mechanism audit](ideation/b_screen/mechanism_audit.md)
+of its four extremising laws and a [comparison figure](synthesis/figures/mechanism_extremisers.pdf).
+Buffering wins initially at all four laws; connectivity overtakes it at
+horizons 4 and 11 under the two minimisers. Complete-action baseline contrasts
+show that the reversal accompanies a large reduction in connectivity's
+benefit, with much smaller changes in buffering's. An all-patch environmental
+hit need not kill every occupied patch, and recolonisation can occur in the
+same step if survivors remain.
 An [exact kernel-transfer check](ideation/b_screen/exchangeable_kernel_audit.md)
 supports using the same moment coefficients on that larger class; the domain
 of its certificates must expand with the class.
