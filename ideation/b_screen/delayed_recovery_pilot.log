@@ -1,0 +1,27 @@
+d=0: exact agreement with existing R/C kernels and persistence at all 8 laws (0.3s)
+d=2 D1: classes C/0 111 (+ext), R 306 (+ext); labelled reachable C 1296 R 1296; density C 0.072 R 0.040; build 1.3s; peak RSS 105.1 MB
+   aggregate == direct labelled propagation at 2 interior points, actions 0/R/C (220.7s)
+   q=3/100 r=1/2 g=2: Delta by law Glo -0.0153, Ghi +0.0276, E-min -0.0321, E-max +0.0404 | regret over W 3.206 pp, minimax-regret R, maximin R (min PR 0.2838, min PC 0.2433)
+      Glo (tau3=9/1000, tau4=27/10000): P0 0.1866 [d0 0.3257]  PR(1/2) 0.3109 [d0 0.4720]  PC(2) 0.3262 [d0 0.5926]
+      Ghi (tau3=221/9000, tau4=19547/810000): P0 0.1665 [d0 0.2514]  PR(1/2) 0.2906 [d0 0.4060]  PC(2) 0.2630 [d0 0.3739]
+      E-min (tau3=0, tau4=0): P0 0.1955 [d0 0.3582]  PR(1/2) 0.3201 [d0 0.5006]  PC(2) 0.3522 [d0 0.6798]
+      E-max (tau3=3/100, tau4=3/100): P0 0.1600 [d0 0.2297]  PR(1/2) 0.2838 [d0 0.3858]  PC(2) 0.2433 [d0 0.3214]
+   q=3/50 r=1/2 g=2: Delta by law Glo +0.0549, Ghi +0.0864, E-min +0.0303, E-max +0.0878 | regret over W 0.000 pp, minimax-regret R, maximin R (min PR 0.1818, min PC 0.0940)
+      Glo (tau3=9/250, tau4=27/1250): P0 0.1028 [d0 0.1555]  PR(1/2) 0.2139 [d0 0.2994]  PC(2) 0.1590 [d0 0.2684]
+      Ghi (tau3=131/2250, tau4=5887/101250): P0 0.0755 [d0 0.0942]  PR(1/2) 0.1838 [d0 0.2315]  PC(2) 0.0975 [d0 0.1211]
+      E-min (tau3=2/75, tau4=0): P0 0.1182 [d0 0.1940]  PR(1/2) 0.2292 [d0 0.3373]  PC(2) 0.1989 [d0 0.3907]
+      E-max (tau3=3/50, tau4=3/50): P0 0.0737 [d0 0.0907]  PR(1/2) 0.1818 [d0 0.2274]  PC(2) 0.0940 [d0 0.1149]
+   propagation for all laws/grid: 28.5s
+d=2 D2: classes C/0 111 (+ext), R 306 (+ext); labelled reachable C 1296 R 1296; density C 0.065 R 0.035; build 1.3s; peak RSS 106.5 MB
+   aggregate == direct labelled propagation at 2 interior points, actions 0/R/C (193.1s)
+   q=3/100 r=1/2 g=2: Delta by law Glo -0.0207, Ghi +0.0220, E-min -0.0374, E-max +0.0350 | regret over W 3.499 pp, minimax-regret C, maximin R (min PR 0.2766, min PC 0.2416)
+      Glo (tau3=9/1000, tau4=27/10000): P0 0.1827 [d0 0.3257]  PR(1/2) 0.2997 [d0 0.4720]  PC(2) 0.3204 [d0 0.5926]
+      Ghi (tau3=221/9000, tau4=19547/810000): P0 0.1640 [d0 0.2514]  PR(1/2) 0.2824 [d0 0.4060]  PC(2) 0.2604 [d0 0.3739]
+      E-min (tau3=0, tau4=0): P0 0.1910 [d0 0.3582]  PR(1/2) 0.3074 [d0 0.5006]  PC(2) 0.3448 [d0 0.6798]
+      E-max (tau3=3/100, tau4=3/100): P0 0.1579 [d0 0.2297]  PR(1/2) 0.2766 [d0 0.3858]  PC(2) 0.2416 [d0 0.3214]
+   q=3/50 r=1/2 g=2: Delta by law Glo +0.0522, Ghi +0.0844, E-min +0.0274, E-max +0.0860 | regret over W 0.000 pp, minimax-regret R, maximin R (min PR 0.1797, min PC 0.0937)
+      Glo (tau3=9/250, tau4=27/1250): P0 0.1017 [d0 0.1555]  PR(1/2) 0.2094 [d0 0.2994]  PC(2) 0.1573 [d0 0.2684]
+      Ghi (tau3=131/2250, tau4=5887/101250): P0 0.0751 [d0 0.0942]  PR(1/2) 0.1816 [d0 0.2315]  PC(2) 0.0972 [d0 0.1211]
+      E-min (tau3=2/75, tau4=0): P0 0.1166 [d0 0.1940]  PR(1/2) 0.2236 [d0 0.3373]  PC(2) 0.1961 [d0 0.3907]
+      E-max (tau3=3/50, tau4=3/50): P0 0.0734 [d0 0.0907]  PR(1/2) 0.1797 [d0 0.2274]  PC(2) 0.0937 [d0 0.1149]
+   propagation for all laws/grid: 24.6s
