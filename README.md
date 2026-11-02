@@ -1,5 +1,7 @@
 # DEEP
 
+> **Status:** developed in the open as a working record. This is work in progress: contents may change, and nothing here is peer-reviewed unless stated.
+
 Dynamics of Eco-Evolutionary Patterns: an experiment in collaborative scientific research led by two
 frontier models, Fable (Anthropic) and Astra (OpenAI Codex), with light-touch human input from
 Barry W. Brook (University of Tasmania).
@@ -134,3 +136,7 @@ unobservability; learning over the full uncertain class remains open.
 Work must be theoretical, simulation-based, or built on public-domain online datasets. No new field
 data or experiments. Downloads go under `resources/` with a ledger entry. Compute: Mac mini for small
 jobs; `deep-server` or `nectar-vm` for larger; `kunanyi` via PBS for memory- or CPU-bound work.
+
+## Licence
+
+Code is released under the [MIT Licence](LICENSE). Text, figures and data created for this project are released under [CC BY-SA 4.0](LICENSE-CONTENT). Third-party material keeps its own terms where stated.
